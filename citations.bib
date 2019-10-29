@@ -765,6 +765,60 @@
   language = "en"
 }
 
+
+@ARTICLE{Roux2015-rt,
+  title    = "{VirSorter}: mining viral signal from microbial genomic data",
+  author   = "Roux, Simon and Enault, Francois and Hurwitz, Bonnie L and
+              Sullivan, Matthew B",
+  abstract = "Viruses of microbes impact all ecosystems where microbes drive
+              key energy and substrate transformations including the oceans,
+              humans and industrial fermenters. However, despite this
+              recognized importance, our understanding of viral diversity and
+              impacts remains limited by too few model systems and reference
+              genomes. One way to fill these gaps in our knowledge of viral
+              diversity is through the detection of viral signal in microbial
+              genomic data. While multiple approaches have been developed and
+              applied for the detection of prophages (viral genomes integrated
+              in a microbial genome), new types of microbial genomic data are
+              emerging that are more fragmented and larger scale, such as
+              Single-cell Amplified Genomes (SAGs) of uncultivated organisms or
+              genomic fragments assembled from metagenomic sequencing. Here, we
+              present VirSorter, a tool designed to detect viral signal in
+              these different types of microbial sequence data in both a
+              reference-dependent and reference-independent manner, leveraging
+              probabilistic models and extensive virome data to maximize
+              detection of novel viruses. Performance testing shows that
+              VirSorter's prophage prediction capability compares to that of
+              available prophage predictors for complete genomes, but is
+              superior in predicting viral sequences outside of a host genome
+              (i.e., from extrachromosomal prophages, lytic infections, or
+              partially assembled prophages). Furthermore, VirSorter
+              outperforms existing tools for fragmented genomic and metagenomic
+              datasets, and can identify viral signal in assembled sequence
+              (contigs) as short as 3kb, while providing near-perfect
+              identification (>95\% Recall and 100\% Precision) on contigs of
+              at least 10kb. Because VirSorter scales to large datasets, it can
+              also be used in ``reverse'' to more confidently identify viral
+              sequence in viral metagenomes by sorting away cellular DNA
+              whether derived from gene transfer agents, generalized
+              transduction or contamination. Finally, VirSorter is made
+              available through the iPlant Cyberinfrastructure that provides a
+              web-based user interface interconnected with the required
+              computing resources. VirSorter thus complements existing prophage
+              prediction softwares to better leverage fragmented, SAG and
+              metagenomic datasets in a way that will scale to modern
+              sequencing. Given these features, VirSorter should enable the
+              discovery of new viruses in microbial datasets, and further our
+              understanding of uncultivated viral communities across diverse
+              ecosystems.",
+  journal  = "PeerJ",
+  volume   =  3,
+  pages    = "e985",
+  year     =  2015,
+  language = "eng"
+}
+
+
 @UNPUBLISHED{Tampuu2019-iu,
   title    = "{ViraMiner}: Deep Learning on Raw {DNA} Sequences for Identifying
               Viral Genomes in Human Samples",
@@ -1113,6 +1167,35 @@
   pages    = "W16--21",
   month    =  jul,
   year     =  2016,
+  language = "en"
+}
+
+
+
+@ARTICLE{Von_Meijenfeldt2019-ae,
+  title    = "Robust taxonomic classification of uncharted microbial sequences
+              and bins with {CAT} and {BAT}",
+  author   = "von Meijenfeldt, F A Bastiaan and Arkhipova, Ksenia and Cambuy,
+              Diego D and Coutinho, Felipe H and Dutilh, Bas E",
+  abstract = "Current-day metagenomics analyses increasingly involve de novo
+              taxonomic classification of long DNA sequences and
+              metagenome-assembled genomes. Here, we show that the conventional
+              best-hit approach often leads to classifications that are too
+              specific, especially when the sequences represent novel deep
+              lineages. We present a classification method that integrates
+              multiple signals to classify sequences (Contig Annotation Tool,
+              CAT) and metagenome-assembled genomes (Bin Annotation Tool, BAT).
+              Classifications are automatically made at low taxonomic ranks if
+              closely related organisms are present in the reference database
+              and at higher ranks otherwise. The result is a high
+              classification precision even for sequences from considerably
+              unknown organisms.",
+  journal  = "Genome Biol.",
+  volume   =  20,
+  number   =  1,
+  pages    = "217",
+  month    =  oct,
+  year     =  2019,
   language = "en"
 }
 

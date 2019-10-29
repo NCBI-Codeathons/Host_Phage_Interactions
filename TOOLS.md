@@ -34,6 +34,8 @@ A review of [An Integrative Approach to Virus–Host Protein–Protein Interacti
 * [WIsH: who is the host? Predicting prokaryotic hosts from metagenomic phage contigs](https://academic.oup.com/bioinformatics/article/33/19/3113/3964377)
 * [VirFinder: a novel k-mer based tool for identifying viral sequences from assembled metagenomic data](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-017-0283-5)
 * [ViraMiner: Deep Learning on Raw DNA Sequences for Identifying Viral Genomes in Human Samples](https://www.biorxiv.org/content/10.1101/602656v2)
+* [VirSorter: mining viral signal from microbial genomic data](https://peerj.com/articles/985/)
+* [Robust taxonomic classification of uncharted microbial sequences and bins with CAT and BAT](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1817-x)
 
 # Predicting Environments
 * [Metagenomic Approaches to Assess Bacteriophages in Various Environmental Niches](https://www.mdpi.com/1999-4915/9/6/127) 
