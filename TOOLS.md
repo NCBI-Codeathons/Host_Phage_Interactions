@@ -21,14 +21,19 @@ A review of [An Integrative Approach to Virus–Host Protein–Protein Interacti
 # Approaches to predict phage hosts
 
 * [Viral host prediction with Deep Learning](https://www.biorxiv.org/content/10.1101/575571v1.abstract)
+* [Identifying viruses from metagenomic data by deep learning](https://arxiv.org/abs/1806.07810)
 * [PHISDetector: a web tool to detect diverse in silico phage-host interaction signals](https://www.biorxiv.org/content/10.1101/661074v1.abstract)
 * [Structure-based prediction of host–pathogen protein interactions](https://www.sciencedirect.com/science/article/pii/S0959440X16301245)
 * [HostPhinder: A Phage Host Prediction Tool](https://www.mdpi.com/1999-4915/8/5/116)
 * [Linking Virus Genomes with Host Taxonomy](https://www.mdpi.com/1999-4915/8/3/66)
 * [A network-based integrated framework for predicting virus-host interactions](https://www.biorxiv.org/content/10.1101/505768v2)
 * [Prediction of virus-host infectious association by supervised learning methods](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5374558/)
+* [Host Taxon Predictor - A Tool for Predicting Taxon of the Host of a Newly Discovered Virus](https://github.com/wojciech-galan/viruses_classifier) and [paper](https://www.nature.com/articles/s41598-019-39847-2)
+* [VirHostMatcher](https://github.com/jessieren/VirHostMatcher) and [paper](https://academic.oup.com/nar/article/45/1/39/2605663)
+
 
 # Identifying phage sequences in metagenomes
+
 * [PhaMers identifies novel bacteriophage sequences from thermophilic hot springs](https://www.biorxiv.org/content/10.1101/169672v1.abstract)
 * [MARVEL, a Tool for Prediction of Bacteriophage Sequences in Metagenomic Bins](https://www.frontiersin.org/articles/10.3389/fgene.2018.00304/full)
 * [WIsH: who is the host? Predicting prokaryotic hosts from metagenomic phage contigs](https://academic.oup.com/bioinformatics/article/33/19/3113/3964377)
@@ -46,17 +51,24 @@ A review of [An Integrative Approach to Virus–Host Protein–Protein Interacti
 **You should start with these two classics:** [Prophages and bacterial genomics: what have we learned so far?
 ](https://onlinelibrary.wiley.com/doi/full/10.1046/j.1365-2958.2003.03580.x) and [Prophage Genomics](https://mmbr.asm.org/content/67/2/238)
 
-* [PhiSpy: a novel algorithm for finding prophages in bacterial genomes that combines similarity- and composition-based strategies](https://academic.oup.com/nar/article/40/16/e126/1027055)
+* [PhiSpy: a novel algorithm for finding prophages in bacterial genomes that combines similarity- and composition-based strategies](https://github.com/linsalrob/PhiSpy) and [paper](https://academic.oup.com/nar/article/40/16/e126/1027055)
 * [Phage_Finder: Automated identification and classification of prophage regions in complete bacterial genome sequences](https://academic.oup.com/nar/article/34/20/5839/3100473)
 * [PHAST, PHASTER and PHASTEST: Tools for finding prophage in bacterial genomes](https://academic.oup.com/bib/article/20/4/1560/4222653)
     * [PHAST: A Fast Phage Search Tool](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3125810/)
     * [PHASTER: a better, faster version of the PHAST phage search tool](https://academic.oup.com/nar/article/44/W1/W16/2499364)
 * [Prophage Hunter: an integrative hunting tool for active prophages](https://academic.oup.com/nar/article/47/W1/W74/5494712)
 * [ProphET, prophage estimation tool: A stand-alone prophage sequence prediction tool with self-updating reference database](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0223364)
+* [PhageWeb](http://computationalbiology.ufpa.br/phageweb) and [paper](https://www.frontiersin.org/articles/10.3389/fgene.2018.00644/full) *Note:* this appears to not be available any longer, although there is this [API](https://github.com/phagewebufpa/API)
 
+# Other tools and approaches
 
-# Classifying Sequences
-*[Classifying the Unclassified: A Phage Classification Method](https://www.mdpi.com/1999-4915/11/2/195)
+## Classifying Sequences
+
+* [Classifying the Unclassified: A Phage Classification Method](https://www.mdpi.com/1999-4915/11/2/195)
+
+## Finding ends
+
+* [PhageTerm: a tool for fast and accurate determination of phage termini and packaging mechanism using next-generation sequencing data](https://sourceforge.net/projects/phageterm/) and [paper](https://www.nature.com/articles/s41598-017-07910-5)
 
 # CRISPr Finding
 
@@ -72,3 +84,4 @@ A review of [An Integrative Approach to Virus–Host Protein–Protein Interacti
 * [CRISPRTarget](http://bioanalysis.otago.ac.nz/CRISPRTarget/)
 * [CRISPRViz](https://github.com/CRISPRlab/CRISPRviz) and [paper](https://www.tandfonline.com/doi/abs/10.1080/15476286.2018.1493332?journalCode=krnb20)
 * [CRISPRStudio](https://github.com/moineaulab/CRISPRStudio)
+
