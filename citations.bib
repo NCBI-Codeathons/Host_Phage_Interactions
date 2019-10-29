@@ -1241,3 +1241,154 @@
   language = "en"
 }
 
+
+@ARTICLE{Galan2019-yn,
+  title    = "Host Taxon Predictor - A Tool for Predicting Taxon of the Host of
+              a Newly Discovered Virus",
+  author   = "Ga{\l}an, Wojciech and B{\k a}k, Maciej and Jakubowska,
+              Ma{\l}gorzata",
+  abstract = "Recent advances in metagenomics provided a valuable alternative
+              to culture-based approaches for better sampling viral diversity.
+              However, some of newly identified viruses lack sequence
+              similarity to any of previously sequenced ones, and cannot be
+              easily assigned to their hosts. Here we present a bioinformatic
+              approach to this problem. We developed classifiers capable of
+              distinguishing eukaryotic viruses from the phages achieving
+              almost 95\% prediction accuracy. The classifiers are wrapped in
+              Host Taxon Predictor (HTP) software written in Python which is
+              freely available at
+              https://github.com/wojciech-galan/viruses\_classifier . HTP's
+              performance was later demonstrated on a collection of newly
+              identified viral genomes and genome fragments. In summary, HTP is
+              a culture- and alignment-free approach for distinction between
+              phages and eukaryotic viruses. We have also shown that it is
+              possible to further extend our method to go up the evolutionary
+              tree and predict whether a virus can infect narrower taxa.",
+  journal  = "Sci. Rep.",
+  volume   =  9,
+  number   =  1,
+  pages    = "3436",
+  month    =  mar,
+  year     =  2019,
+  language = "en"
+}
+
+
+% The entry below contains non-ASCII chars that could not be converted
+% to a LaTeX equivalent.
+@ARTICLE{Ahlgren2017-uu,
+  title    = "Alignment-free $d_2^*$ oligonucleotide frequency dissimilarity
+              measure improves prediction of hosts from metagenomically-derived
+              viral sequences",
+  author   = "Ahlgren, Nathan A and Ren, Jie and Lu, Yang Young and Fuhrman,
+              Jed A and Sun, Fengzhu",
+  abstract = "Viruses and their host genomes often share similar
+              oligonucleotide frequency (ONF) patterns, which can be used to
+              predict the host of a given virus by finding the host with the
+              greatest ONF similarity. We comprehensively compared 11 ONF
+              metrics using several k-mer lengths for predicting host taxonomy
+              from among ∼32 000 prokaryotic genomes for 1427 virus isolate
+              genomes whose true hosts are known. The background-subtracting
+              measure [Formula: see text] at k = 6 gave the highest host
+              prediction accuracy (33\%, genus level) with reasonable
+              computational times. Requiring a maximum dissimilarity score for
+              making predictions (thresholding) and taking the consensus of the
+              30 most similar hosts further improved accuracy. Using a previous
+              dataset of 820 bacteriophage and 2699 bacterial genomes,
+              [Formula: see text] host prediction accuracies with thresholding
+              and consensus methods (genus-level: 64\%) exceeded previous
+              Euclidian distance ONF (32\%) or homology-based (22-62\%)
+              methods. When applied to metagenomically-assembled marine SUP05
+              viruses and the human gut virus crAssphage, [Formula: see
+              text]-based predictions overlapped (i.e. some same, some
+              different) with the previously inferred hosts of these viruses.
+              The extent of overlap improved when only using host genomes or
+              metagenomic contigs from the same habitat or samples as the query
+              viruses. The [Formula: see text] ONF method will greatly improve
+              the characterization of novel, metagenomic viruses.",
+  journal  = "Nucleic Acids Res.",
+  volume   =  45,
+  number   =  1,
+  pages    = "39--53",
+  month    =  jan,
+  year     =  2017,
+  language = "en"
+}
+
+@ARTICLE{De_Sousa2018-cz,
+  title    = "{PhageWeb} - Web Interface for Rapid Identification and
+              Characterization of Prophages in Bacterial Genomes",
+  author   = "de Sousa, Ailton Lopes and Mau{\'e}s, Dener and Lobato,
+              Am{\'a}lia and Franco, Edian F and Pinheiro, Kenny and
+              Ara{\'u}jo, Fabr{\'\i}cio and Pantoja, Yan and da Costa da Silva,
+              Artur Luiz and Morais, Jefferson and Ramos, Rommel T J",
+  abstract = "This study developed a computational tool with a graphical
+              interface and a web-service that allows the identification of
+              phage regions through homology search and gene clustering. It
+              uses G+C content variation evaluation and tRNA prediction sites
+              as evidence to reinforce the presence of prophages in
+              indeterminate regions. Also, it performs the functional
+              characterization of the prophages regions through data
+              integration of biological databases. The performance of PhageWeb
+              was compared to other available tools (PHASTER, Prophinder, and
+              PhiSpy) using Sensitivity (Sn) and Positive Predictive Value
+              (PPV) tests. As a reference for the tests, more than 80 manually
+              annotated genomes were used. In the PhageWeb analysis, the Sn
+              index was 86.1\% and the PPV was approximately 87\%, while the
+              second best tool presented Sn and PPV values of 83.3 and 86.5\%,
+              respectively. These numbers allowed us to observe a greater
+              precision in the regions identified by PhageWeb while compared to
+              other prediction tools submitted to the same tests. Additionally,
+              PhageWeb was much faster than the other computational
+              alternatives, decreasing the processing time to approximately
+              one-ninth of the time required by the second best software.
+              PhageWeb is freely available at
+              http://computationalbiology.ufpa.br/phageweb.",
+  journal  = "Front. Genet.",
+  volume   =  9,
+  pages    = "644",
+  month    =  dec,
+  year     =  2018,
+  keywords = "bacterial genome; characterization; clustering; phage; prophage;
+              web interface; web service",
+  language = "en"
+}
+
+@ARTICLE{Garneau2017-fa,
+  title    = "{PhageTerm}: a tool for fast and accurate determination of phage
+              termini and packaging mechanism using next-generation sequencing
+              data",
+  author   = "Garneau, Julian R and Depardieu, Florence and Fortier,
+              Louis-Charles and Bikard, David and Monot, Marc",
+  abstract = "The worrying rise of antibiotic resistance in pathogenic bacteria
+              is leading to a renewed interest in bacteriophages as a treatment
+              option. Novel sequencing technologies enable description of an
+              increasing number of phage genomes, a critical piece of
+              information to understand their life cycle, phage-host
+              interactions, and evolution. In this work, we demonstrate how it
+              is possible to recover more information from sequencing data than
+              just the phage genome. We developed a theoretical and statistical
+              framework to determine DNA termini and phage packaging mechanisms
+              using NGS data. Our method relies on the detection of biases in
+              the number of reads, which are observable at natural DNA termini
+              compared with the rest of the phage genome. We implemented our
+              method with the creation of the software PhageTerm and validated
+              it using a set of phages with well-established packaging
+              mechanisms representative of the termini diversity, i.e. 5'cos
+              (Lambda), 3'cos (HK97), pac (P1), headful without a pac site
+              (T4), DTR (T7) and host fragment (Mu). In addition, we determined
+              the termini of nine Clostridium difficile phages and six phages
+              whose sequences were retrieved from the Sequence Read Archive.
+              PhageTerm is freely available
+              (https://sourceforge.net/projects/phageterm), as a Galaxy
+              ToolShed and on a Galaxy-based server
+              (https://galaxy.pasteur.fr).",
+  journal  = "Sci. Rep.",
+  volume   =  7,
+  number   =  1,
+  pages    = "8292",
+  month    =  aug,
+  year     =  2017,
+  language = "en"
+}
+
