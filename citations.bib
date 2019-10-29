@@ -1,0 +1,1118 @@
+
+@ARTICLE{Akhter2012-an,
+  title     = "{PhiSpy}: a novel algorithm for finding prophages in bacterial
+               genomes that combines similarity- and composition-based
+               strategies",
+  author    = "Akhter, Sajia and Aziz, Ramy K and Edwards, Robert A",
+  abstract  = "Prophages are phages in lysogeny that are integrated into, and
+               replicated as part of, the host bacterial genome. These mobile
+               elements can have tremendous impact on their bacterial hosts'
+               genomes and phenotypes, which may lead to strain emergence and
+               diversification, increased virulence or antibiotic resistance.
+               However, finding prophages in microbial genomes remains a
+               problem with no definitive solution. The majority of existing
+               tools rely on detecting genomic regions enriched in
+               protein-coding genes with known phage homologs, which hinders
+               the de novo discovery of phage regions. In this study, a
+               weighted phage detection algorithm, PhiSpy was developed based
+               on seven distinctive characteristics of prophages, i.e. protein
+               length, transcription strand directionality, customized AT and
+               GC skew, the abundance of unique phage words, phage insertion
+               points and the similarity of phage proteins. The first five
+               characteristics are capable of identifying prophages without any
+               sequence similarity with known phage genes. PhiSpy locates
+               prophages by ranking genomic regions enriched in distinctive
+               phage traits, which leads to the successful prediction of 94\%
+               of prophages in 50 complete bacterial genomes with a 6\%
+               false-negative rate and a 0.66\% false-positive rate.",
+  journal   = "Nucleic Acids Res.",
+  publisher = "Oxford University Press",
+  volume    =  40,
+  number    =  16,
+  pages     = "e126",
+  month     =  sep,
+  year      =  2012,
+  language  = "en"
+}
+
+@UNPUBLISHED{Mock2019-kv,
+  title    = "Viral host prediction with Deep Learning",
+  author   = "Mock, Florian and Viehweger, Adrian and Barth, Emanuel and Marz,
+              Manja",
+  abstract = "Zoonosis, the natural transmission of infections from animal to
+              human, is a far-reaching global problem. The recent outbreaks of
+              Zika virus and Ebola virus are examples of viral zoonosis, which
+              occur more frequently due to globalization. In case of a virus
+              outbreak, it is helpful to know which host organism was the
+              original carrier of the virus. Once the reservoir or intermediate
+              host is known, it can be isolated to prevent further spreading of
+              the viral infection. Recent approaches aim to predict a viral
+              host based on the viral genome, often in combination with the
+              potential host genome and using arbitrary selected features. This
+              methods have a clear limitation in either the amount of different
+              hosts they can predict or the accuracy of the prediction. Here,
+              we present a fast and accurate deep learning approach for viral
+              host prediction, which is based on the viral genome sequence
+              only. To assure a high prediction accuracy we developed an
+              effective selection approach for the training data, to avoid
+              biases due to a highly unbalanced number of known sequences per
+              virus-host combinations.We tested our deep neural network on
+              three different virus species (influenza A virus, rabies
+              lyssavirus, rotavirus A) and reached for each virus species a AUC
+              between 0.94 and 0.98, outperforming previous approaches and
+              allowing highly accurate predictions while only using fractions
+              of the viral genome sequences. We show that deep neural networks
+              are suitable to predict the host of a virus, even with a limited
+              amount of sequences and highly unbalanced available data. The
+              deep neural networks trained for this approach build the core of
+              the virus host predicting tool VIDHOP (VIrus Deep learning HOst
+              Prediction).",
+  journal  = "bioRxiv",
+  pages    = "575571",
+  month    =  mar,
+  year     =  2019,
+  language = "en"
+}
+
+@UNPUBLISHED{Zhang2019-sk,
+  title    = "{PHISDetector}: a web tool to detect diverse in silico phage-host
+              interaction signals",
+  author   = "Zhang, Fan and Zhou, Fengxia and Gan, Rui and Ren, Chunyan and
+              Jia, Yuqiang and Yu, Ling and Huang, Zhiwei",
+  abstract = "ABSTRACT Phage-host interactions are appealing systems to study
+              co-evolution. Their roles in human health and diseases as well as
+              novel therapeutics development also have been increasingly
+              emphasized. Meanwhile, such interactions leave signals in
+              bacterial and phage genomic sequences, defined as phage-host
+              interaction signals (PHIS), allowing us to predict novel
+              phage-host interactions. Due to the intrinsic complexity and
+              recent emerging of metagenomics sequencing data, there is an
+              urgent requirement to develop computational tools to analyze
+              massive data and extract meaningful information. Here, we seize
+              comprehensive in silico PHIS and utilize sophisticated
+              bioinformatics to develop PHISDetector, a web tool to detect and
+              systematically study diverse in silico PHIS, including analyses
+              for co-occurrence/co-abundance patterns, oligonucleotide
+              profile/sequence composition, CRISPR-targeting, prophages, phage
+              genome similarity, protein-protein interactions, and special gene
+              check. PHISDetector accepts various genomic and metagenomic data
+              as input and provides well-designed visualizations and detailed
+              data tables to download. Prediction tasks are processed remotely
+              by the server using custom python scripts and a series of public
+              tools. PHISDetector can be accessed at
+              http://www.microbiome-bigdata.com/PHISDetector/index/.",
+  journal  = "bioRxiv",
+  pages    = "661074",
+  month    =  jun,
+  year     =  2019,
+  language = "en"
+}
+
+@UNPUBLISHED{Deaton2017-yh,
+  title    = "{PhaMers} identifies novel bacteriophage sequences from
+              thermophilic hot springs",
+  author   = "Deaton, Jonathan and Yu, Feiqiao Brian and Quake, Stephen R",
+  abstract = "Abstract Metagenomic sequencing approaches have become popular
+              for the purpose of dissecting environmental microbial diversity,
+              leading to the characterization of novel microbial lineages. In
+              addition of bacterial and fungal genomes, metagenomic analysis
+              can also reveal genomes of viruses that infect microbial cells.
+              Because of their small genome size and limited knowledge of phage
+              diversity, discovering novel phage sequences from metagenomic
+              data is often challenging. Here we describe PhaMers
+              (Phagek-Mers). a phage identification tool that uses supervised
+              learning to classify metagenomic contigs as phage or non-phage on
+              the basis of tetranucleotide frequencies. a technique that does
+              not depend on existing gene annotations. PhaMers compares the
+              tetranucleotide frequencies of metagenomic contigs to phage and
+              bacteria references from online databases. resulting in
+              assignments of lower level phage taxonomy based on sequence
+              similarity. Using PhaMers. we identified 103 novel phage
+              sequences from hot spring samples of Yellowstone National Park
+              based on data generated from a microfluidic-based minimetagenomic
+              approach. We analyzed assembled contigs over 5 kbp in length
+              using PhaMers and compared the results with those generated by
+              VirSorter, a publicly available phage identification and
+              annotation package. We analyzed the performance of phage genome
+              prediction and taxonomic classification using PhaMers. and
+              presented putative hosts and taxa for some of the novel phage
+              sequences. Finally. mini-metagenomic occurrence profiles of phage
+              and prokaryotic genomes were used to verify putative hosts.",
+  journal  = "bioRxiv",
+  pages    = "169672",
+  month    =  jul,
+  year     =  2017,
+  language = "en"
+}
+
+
+@ARTICLE{Ge2016-bj,
+  title    = "{CRISPRdigger}: detecting {CRISPRs} with better direct repeat
+              annotations",
+  author   = "Ge, Ruiquan and Mai, Guoqin and Wang, Pu and Zhou, Manli and Luo,
+              Youxi and Cai, Yunpeng and Zhou, Fengfeng",
+  abstract = "Clustered regularly interspaced short palindromic repeats
+              (CRISPRs) are important genetic elements in many bacterial and
+              archaeal genomes, and play a key role in prokaryote immune
+              systems' fight against invasive foreign elements. The CRISPR
+              system has also been engineered to facilitate target gene editing
+              in eukaryotic genomes. Using the common features of mis-annotated
+              CRISPRs in prokaryotic genomes, this study proposed an accurate
+              de novo CRISPR annotation program CRISPRdigger, which can take a
+              partially assembled genome as its input. A comprehensive
+              comparison with the three existing programs demonstrated that
+              CRISPRdigger can recover more Direct Repeats (DRs) for CRISPRs
+              and achieve a higher accuracy for a query genome. The program was
+              implemented by Perl and all the parameters had default values, so
+              that a user could annotate CRISPRs in a query genome by supplying
+              only a genome sequence in the FASTA format. All the supplementary
+              data are available at http://www.healthinformaticslab.org/supp/.",
+  journal  = "Sci. Rep.",
+  volume   =  6,
+  pages    = "32942",
+  month    =  sep,
+  year     =  2016,
+  language = "en"
+}
+
+@ARTICLE{Biswas2014-rd,
+  title    = "Accurate computational prediction of the transcribed strand of
+              {CRISPR} non-coding {RNAs}",
+  author   = "Biswas, Ambarish and Fineran, Peter C and Brown, Chris M",
+  abstract = "MOTIVATION: CRISPR RNAs (crRNAs) are a type of small non-coding
+              RNA that form a key part of an acquired immune system in
+              prokaryotes. Specific prediction methods find crRNA-encoding loci
+              in nearly half of sequenced bacterial, and three quarters of
+              archaeal, species. These Clustered Regularly Interspaced Short
+              Palindromic Repeats (CRISPR) arrays consist of repeat elements
+              alternating with specific spacers. Generally one strand is
+              transcribed, producing long pre-crRNAs, which are processed to
+              short crRNAs that base pair with invading nucleic acids to
+              facilitate their destruction. No current software for the
+              discovery of CRISPR loci predicts the direction of crRNA
+              transcription. RESULTS: We have developed an algorithm that
+              accurately predicts the strand of the resulting crRNAs. The
+              method uses as input CRISPR repeat predictions. CRISPRDirection
+              uses parameters that are calculated from the CRISPR repeat
+              predictions and flanking sequences, which are combined by
+              weighted voting. The prediction may use prior coding sequence
+              annotation but this is not required. CRISPRDirection correctly
+              predicted the orientation of 94\% of a reference set of arrays.
+              AVAILABILITY AND IMPLEMENTATION: The Perl source code is freely
+              available from http://bioanalysis.otago.ac.nz/CRISPRDirection.",
+  journal  = "Bioinformatics",
+  volume   =  30,
+  number   =  13,
+  pages    = "1805--1813",
+  month    =  jul,
+  year     =  2014,
+  language = "en"
+}
+
+@ARTICLE{Alkhnbashi2014-ys,
+  title    = "{CRISPRstrand}: predicting repeat orientations to determine the
+              {crRNA-encoding} strand at {CRISPR} loci",
+  author   = "Alkhnbashi, Omer S and Costa, Fabrizio and Shah, Shiraz A and
+              Garrett, Roger A and Saunders, Sita J and Backofen, Rolf",
+  abstract = "MOTIVATION: The discovery of CRISPR-Cas systems almost 20 years
+              ago rapidly changed our perception of the bacterial and archaeal
+              immune systems. CRISPR loci consist of several repetitive DNA
+              sequences called repeats, inter-spaced by stretches of variable
+              length sequences called spacers. This CRISPR array is transcribed
+              and processed into multiple mature RNA species (crRNAs). A single
+              crRNA is integrated into an interference complex, together with
+              CRISPR-associated (Cas) proteins, to bind and degrade invading
+              nucleic acids. Although existing bioinformatics tools can
+              recognize CRISPR loci by their characteristic repeat-spacer
+              architecture, they generally output CRISPR arrays of ambiguous
+              orientation and thus do not determine the strand from which
+              crRNAs are processed. Knowledge of the correct orientation is
+              crucial for many tasks, including the classification of CRISPR
+              conservation, the detection of leader regions, the identification
+              of target sites (protospacers) on invading genetic elements and
+              the characterization of protospacer-adjacent motifs. RESULTS: We
+              present a fast and accurate tool to determine the crRNA-encoding
+              strand at CRISPR loci by predicting the correct orientation of
+              repeats based on an advanced machine learning approach. Both the
+              repeat sequence and mutation information were encoded and
+              processed by an efficient graph kernel to learn higher-order
+              correlations. The model was trained and tested on curated data
+              comprising >4500 CRISPRs and yielded a remarkable performance of
+              0.95 AUC ROC (area under the curve of the receiver operator
+              characteristic). In addition, we show that accurate orientation
+              information greatly improved detection of conserved repeat
+              sequence families and structure motifs. We integrated
+              CRISPRstrand predictions into our CRISPRmap web server of CRISPR
+              conservation and updated the latter to version 2.0. AVAILABILITY:
+              CRISPRmap and CRISPRstrand are available at
+              http://rna.informatik.uni-freiburg.de/CRISPRmap. SUPPLEMENTARY
+              INFORMATION: Supplementary data are available at Bioinformatics
+              online.",
+  journal  = "Bioinformatics",
+  volume   =  30,
+  number   =  17,
+  pages    = "i489--96",
+  month    =  sep,
+  year     =  2014,
+  language = "en"
+}
+
+@ARTICLE{Lange2013-qs,
+  title    = "{CRISPRmap}: an automated classification of repeat conservation
+              in prokaryotic adaptive immune systems",
+  author   = "Lange, Sita J and Alkhnbashi, Omer S and Rose, Dominic and Will,
+              Sebastian and Backofen, Rolf",
+  abstract = "Central to Clustered Regularly Interspaced Short Palindromic
+              Repeat (CRISPR)-Cas systems are repeated RNA sequences that serve
+              as Cas-protein-binding templates. Classification is based on the
+              architectural composition of associated Cas proteins, considering
+              repeat evolution is essential to complete the picture. We
+              compiled the largest data set of CRISPRs to date, performed
+              comprehensive, independent clustering analyses and identified a
+              novel set of 40 conserved sequence families and 33 potential
+              structure motifs for Cas-endoribonucleases with some distinct
+              conservation patterns. Evolutionary relationships are presented
+              as a hierarchical map of sequence and structure similarities for
+              both a quick and detailed insight into the diversity of
+              CRISPR-Cas systems. In a comparison with Cas-subtypes, I-C, I-E,
+              I-F and type II were strongly coupled and the remaining type I
+              and type III subtypes were loosely coupled to repeat and Cas1
+              evolution, respectively. Subtypes with a strong link to CRISPR
+              evolution were almost exclusive to bacteria; nevertheless, we
+              identified rare examples of potential horizontal transfer of I-C
+              and I-E systems into archaeal organisms. Our easy-to-use web
+              server provides an automated assignment of newly sequenced
+              CRISPRs to our classification system and enables more informed
+              choices on future hypotheses in CRISPR-Cas research:
+              http://rna.informatik.uni-freiburg.de/CRISPRmap.",
+  journal  = "Nucleic Acids Res.",
+  volume   =  41,
+  number   =  17,
+  pages    = "8034--8044",
+  month    =  sep,
+  year     =  2013,
+  language = "en"
+}
+
+@ARTICLE{Edgar2007-wo,
+  title    = "{PILER-CR}: fast and accurate identification of {CRISPR} repeats",
+  author   = "Edgar, Robert C",
+  abstract = "BACKGROUND: Sequencing of prokaryotic genomes has recently
+              revealed the presence of CRISPR elements: short, highly conserved
+              repeats separated by unique sequences of similar length. The
+              distinctive sequence signature of CRISPR repeats can be found
+              using general-purpose repeat- or pattern-finding software tools.
+              However, the output of such tools is not always ideal for
+              studying these repeats, and significant effort is sometimes
+              needed to build additional tools and perform manual analysis of
+              the output. RESULTS: We present PILER-CR, a program specifically
+              designed for the identification and analysis of CRISPR repeats.
+              The program executes rapidly, completing a 5 Mb genome in around
+              5 seconds on a current desktop computer. We validate the
+              algorithm by manual curation and by comparison with published
+              surveys of these repeats, finding that PILER-CR has both high
+              sensitivity and high specificity. We also present a catalogue of
+              putative CRISPR repeats identified in a comprehensive analysis of
+              346 prokaryotic genomes. CONCLUSION: PILER-CR is a useful tool
+              for rapid identification and classification of CRISPR repeats.
+              The software is donated to the public domain. Source code and a
+              Linux binary are freely available at
+              http://www.drive5.com/pilercr.",
+  journal  = "BMC Bioinformatics",
+  volume   =  8,
+  pages    = "18",
+  month    =  jan,
+  year     =  2007,
+  language = "en"
+}
+
+@ARTICLE{Nethery2019-xu,
+  title    = "{CRISPR} Visualizer: rapid identification and visualization of
+              {CRISPR} loci via an automated high-throughput processing
+              pipeline",
+  author   = "Nethery, Matthew A and Barrangou, Rodolphe",
+  abstract = "A CRISPR locus, defined by an array of repeat and spacer
+              elements, constitutes a genetic record of the ceaseless battle
+              between bacteria and viruses, showcasing the genomic integration
+              of spacers acquired from invasive DNA. In particular, iterative
+              spacer acquisitions represent unique evolutionary histories and
+              are often useful for high-resolution bacterial genotyping,
+              including comparative analysis of closely related organisms,
+              clonal lineages, and clinical isolates. Current spacer
+              visualization methods are typically tedious and can require
+              manual data manipulation and curation, including spacer
+              extraction at each CRISPR locus from genomes of interest. Here,
+              we constructed a high-throughput extraction pipeline coupled with
+              a local web-based visualization tool which enables CRISPR spacer
+              and repeat extraction, rapid visualization, graphical comparison,
+              and progressive multiple sequence alignment. We present the
+              bioinformatic pipeline and investigate the loci of reference
+              CRISPR-Cas systems and model organisms in 4 well-characterized
+              subtypes. We illustrate how this analysis uncovers the
+              evolutionary tracks and homology shared between various organisms
+              through visual comparison of CRISPR spacers and repeats, driven
+              through progressive alignments. Due to the ability to process
+              unannotated genome files with minimal preparation and curation,
+              this pipeline can be implemented promptly. Overall, this
+              efficient high-throughput solution supports accelerated analysis
+              of genomic data sets and enables and expedites genotyping efforts
+              based on CRISPR loci.",
+  journal  = "RNA Biol.",
+  volume   =  16,
+  number   =  4,
+  pages    = "577--584",
+  month    =  apr,
+  year     =  2019,
+  keywords = "CRISPR spacer; CRISPR-Cas; crRNA; repeat detection; software",
+  language = "en"
+}
+
+@ARTICLE{Rousseau2009-zv,
+  title    = "{CRISPI}: a {CRISPR} interactive database",
+  author   = "Rousseau, Christine and Gonnet, Mathieu and Le Romancer, Marc and
+              Nicolas, Jacques",
+  abstract = "SUMMARY: The CRISPR genomic structures (Clustered Regularly
+              Interspaced Short Palindromic Repeats) form a family of repeats
+              that is largely present in archaea and frequent in bacteria. On
+              the basis of a formal model of CRISPR using very few parameters,
+              a systematic study of all their occurrences in all available
+              genomes of Archaea and Bacteria has been carried out. This has
+              resulted in a relational database, CRISPI, which also includes a
+              complete repertory of associated CRISPR-associated genes (CAS). A
+              user-friendly web interface with many graphical tools and
+              functions allows users to extract results, find CRISPR in
+              personal sequences or calculate sequence similarity with spacers.
+              AVAILABILITY: CRISPI free access at http://crispi.genouest.org
+              CONTACT: croussea@irisa.fr; jnicolas@irisa.fr",
+  journal  = "Bioinformatics",
+  volume   =  25,
+  number   =  24,
+  pages    = "3317--3318",
+  month    =  dec,
+  year     =  2009,
+  language = "eng"
+}
+
+@INCOLLECTION{Cook2018-go,
+  title     = "An Integrative Approach to {Virus--Host} {Protein--Protein}
+               Interactions",
+  booktitle = "Computational Cell Biology: Methods and Protocols",
+  author    = "Cook, Helen V and Jensen, Lars Juhl",
+  editor    = "von Stechow, Louise and Santos Delgado, Alberto",
+  abstract  = "Since cell regulation and protein expression can be dramatically
+               altered upon infection by viruses, studying the mechanisms by
+               which viruses infect cells and the regulatory networks they
+               disrupt is essential to understanding viral pathogenicity. This
+               line of study can also lead to discoveries about the workings of
+               host cells themselves. Computational methods are rapidly being
+               developed to investigate viral-host interactions, and here we
+               highlight recent methods and the insights that they have
+               revealed so far, with a particular focus on methods that
+               integrate different types of data. We also review the challenges
+               of working with viruses compared with traditional cellular
+               biology, and the limitations of current experimental and
+               informatics methods.",
+  publisher = "Springer New York",
+  pages     = "175--196",
+  year      =  2018,
+  address   = "New York, NY"
+}
+
+
+@ARTICLE{Leite2018-yf,
+  title    = "Computational prediction of inter-species relationships through
+              omics data analysis and machine learning",
+  author   = "Leite, Diogo Manuel Carvalho and Brochet, Xavier and Resch,
+              Gr{\'e}gory and Que, Yok-Ai and Neves, Aitana and Pe{\~n}a-Reyes,
+              Carlos",
+  abstract = "BACKGROUND: Antibiotic resistance and its rapid dissemination
+              around the world threaten the efficacy of currently-used medical
+              treatments and call for novel, innovative approaches to manage
+              multi-drug resistant infections. Phage therapy, i.e., the use of
+              viruses (phages) to specifically infect and kill bacteria during
+              their life cycle, is one of the most promising alternatives to
+              antibiotics. It is based on the correct matching between a target
+              pathogenic bacteria and the therapeutic phage. Nevertheless,
+              correctly matching them is a major challenge. Currently, there is
+              no systematic method to efficiently predict whether
+              phage-bacterium interactions exist and these pairs must be
+              empirically tested in laboratory. Herein, we present our approach
+              for developing a computational model able to predict whether a
+              given phage-bacterium pair can interact based on their genome.
+              RESULTS: Based on public data from GenBank and phagesDB.org, we
+              collected more than a thousand positive phage-bacterium
+              interactions with their complete genomes. In addition, we
+              generated putative negative (i.e., non-interacting) pairs. We
+              extracted, from the collected genomes, a set of informative
+              features based on the distribution of predictive protein-protein
+              interactions and on their primary structure (e.g. amino-acid
+              frequency, molecular weight and chemical composition of each
+              protein). With these features, we generated multiple candidate
+              datasets to train our algorithms. On this base, we built
+              predictive models exhibiting predictive performance of around
+              90\% in terms of F1-score, sensitivity, specificity, and
+              accuracy, obtained on the test set with 10-fold cross-validation.
+              CONCLUSION: These promising results reinforce the hypothesis that
+              machine learning techniques may produce highly-predictive models
+              accelerating the search of interacting phage-bacteria pairs.",
+  journal  = "BMC Bioinformatics",
+  volume   =  19,
+  number   = "Suppl 14",
+  pages    = "420",
+  month    =  nov,
+  year     =  2018,
+  keywords = "Health; Machine learning; Phage-therapy; Supervised learning",
+  language = "en"
+}
+
+
+@INPROCEEDINGS{Carvalho_Leite2017-eo,
+  title     = "Computational Prediction of {Host-Pathogen} Interactions Through
+               Omics Data Analysis and Machine Learning",
+  booktitle = "Bioinformatics and Biomedical Engineering",
+  author    = "Carvalho Leite, Diogo Manuel and Brochet, Xavier and Resch,
+               Gr{\'e}gory and Que, Yok-Ai and Neves, Aitana and
+               Pe{\~n}a-Reyes, Carlos",
+  abstract  = "The emergence and rapid dissemination of antibiotic resistance,
+               worldwide, threatens medical progress and calls for innovative
+               approaches for the management of multidrug resistant infections.
+               Phage-therapy, i.e., the use of viruses (phages) that
+               specifically infect and kill bacteria during their life cycle,
+               is a re-emerging and promising alternative to solve this
+               problem. The success of phage therapy mainly relies on the exact
+               matching between the target pathogenic bacteria and the
+               therapeutic phage. Currently, there are only a few tools or
+               methodologies that efficiently predict phage-bacteria
+               interactions suitable for the phage therapy, and the pairs
+               phage-bacterium are thus empirically tested in laboratory. In
+               this paper we present an original methodology, based on an
+               ensemble-learning approach, to predict whether or not a given
+               pair of phage-bacteria would interact. Using publicly available
+               information from Genbank and phagesdb.org, we assembled a
+               dataset containing more than two thousand phage-bacterium
+               interactions with their corresponding genomes. A set of
+               informative features, extracted from these genomes, form the
+               base of the quantitative datasets used to train our predictive
+               models. These features include the distribution of predicted
+               protein-protein interaction scores, as well as the amino acid
+               frequency, the chemical composition, and the molecular weight of
+               such proteins. Using an independent test dataset to evaluate the
+               performance of our methodology, our approach gets encouraging
+               performance with more than 90\% of accuracy, specificity, and
+               sensitivity.",
+  publisher = "Springer International Publishing",
+  pages     = "360--371",
+  year      =  2017
+}
+
+@ARTICLE{Mariano2017-vs,
+  title    = "Structure-based prediction of host-pathogen protein interactions",
+  author   = "Mariano, Rachelle and Wuchty, Stefan",
+  abstract = "The discovery, validation, and characterization of protein-based
+              interactions from different species are crucial for translational
+              research regarding a variety of pathogens, ranging from the
+              malaria parasite Plasmodium falciparum to HIV-1. Here, we review
+              recent advances in the prediction of host-pathogen protein
+              interfaces using structural information. In particular, we
+              observe that current methods chiefly perform machine learning on
+              sequence and domain information to produce large sets of
+              candidate interactions that are further assessed and pruned to
+              generate final, highly probable sets. Structure-based studies
+              have also emphasized the electrostatic properties and
+              evolutionary transformations of pathogenic interfaces, supplying
+              crucial insight into antigenic determinants and the ways
+              pathogens compete for host protein binding. Advancements in
+              spectroscopic and crystallographic methods complement the
+              aforementioned techniques, permitting the rigorous study of true
+              positives at a molecular level. Together, these approaches
+              illustrate how protein structure on a variety of levels functions
+              coordinately and dynamically to achieve host takeover.",
+  journal  = "Curr. Opin. Struct. Biol.",
+  volume   =  44,
+  pages    = "119--124",
+  month    =  jun,
+  year     =  2017,
+  language = "en"
+}
+
+@ARTICLE{Hurwitz2018-tf,
+  title    = "Phage hunters: Computational strategies for finding phages in
+              large-scale 'omics datasets",
+  author   = "Hurwitz, Bonnie L and Ponsero, Alise and Thornton, Jr, James and
+              U'Ren, Jana M",
+  abstract = "A plethora of tools exist for identifying phage sequences in
+              bacterial genomes, single cell amplified genomes, and
+              host-associated and environmental metagenomes. Yet because the
+              genetics of phages and their hosts are closely intertwined,
+              distinguishing viral from bacterial signal remains an ongoing
+              challenge. Further the size, quantity and fragmentary nature of
+              modern 'omics datasets ushers in a new set of computational
+              challenges. Here, we detail the promises and pitfalls of using
+              currently available gene-centric or k-mer based tools for
+              identifying prophage sequences in genomes and prophage and viral
+              contigs in metagenomes. Each of these methods offers a unique
+              piece of the puzzle to elucidating the intriguing signatures of
+              phage-host coevolution.",
+  journal  = "Virus Res.",
+  volume   =  244,
+  pages    = "110--115",
+  month    =  jan,
+  year     =  2018,
+  keywords = "Bioinformatics; Computational biology; Metagenomics; Phage;
+              Prophage; Virus-host coevolution",
+  language = "en"
+}
+
+@ARTICLE{Amgarten2018-ik,
+  title    = "{MARVEL}, a Tool for Prediction of Bacteriophage Sequences in
+              Metagenomic Bins",
+  author   = "Amgarten, Deyvid and Braga, Lucas P P and da Silva, Aline M and
+              Setubal, Jo{\~a}o C",
+  abstract = "Here we present MARVEL, a tool for prediction of double-stranded
+              DNA bacteriophage sequences in metagenomic bins. MARVEL uses a
+              random forest machine learning approach. We trained the program
+              on a dataset with 1,247 phage and 1,029 bacterial genomes, and
+              tested it on a dataset with 335 bacterial and 177 phage genomes.
+              We show that three simple genomic features extracted from contig
+              sequences were sufficient to achieve a good performance in
+              separating bacterial from phage sequences: gene density, strand
+              shifts, and fraction of significant hits to a viral protein
+              database. We compared the performance of MARVEL to that of
+              VirSorter and VirFinder, two popular programs for predicting
+              viral sequences. Our results show that all three programs have
+              comparable specificity, but MARVEL achieves much better
+              performance on the recall (sensitivity) measure. This means that
+              MARVEL should be able to identify many more phage sequences in
+              metagenomic bins than heretofore has been possible. In a simple
+              test with real data, containing mostly bacterial sequences,
+              MARVEL classified 58 out of 209 bins as phage genomes; other
+              evidence suggests that 57 of these 58 bins are novel phage
+              sequences. MARVEL is freely available at
+              https://github.com/LaboratorioBioinformatica/MARVEL.",
+  journal  = "Front. Genet.",
+  volume   =  9,
+  pages    = "304",
+  month    =  aug,
+  year     =  2018,
+  keywords = "machine learning; microbiome; phage; random forest; virus",
+  language = "en"
+}
+
+@ARTICLE{Galiez2017-xb,
+  title    = "{WIsH}: who is the host? Predicting prokaryotic hosts from
+              metagenomic phage contigs",
+  author   = "Galiez, Clovis and Siebert, Matthias and Enault, Fran{\c c}ois
+              and Vincent, Jonathan and S{\"o}ding, Johannes",
+  abstract = "Summary: WIsH predicts prokaryotic hosts of phages from their
+              genomic sequences. It achieves 63\% mean accuracy when predicting
+              the host genus among 20 genera for 3 kbp-long phage contigs. Over
+              the best current tool, WisH shows much improved accuracy on phage
+              sequences of a few kbp length and runs hundreds of times faster,
+              making it suited for metagenomics studies. Availability and
+              implementation: OpenMP-parallelized GPL-licensed C ++ code
+              available at https://github.com/soedinglab/wish. Contact:
+              clovis.galiez@mpibpc.mpg.de or soeding@mpibpc.mpg.de.
+              Supplementary information: Supplementary data are available at
+              Bioinformatics online.",
+  journal  = "Bioinformatics",
+  volume   =  33,
+  number   =  19,
+  pages    = "3113--3114",
+  month    =  oct,
+  year     =  2017,
+  language = "en"
+}
+
+@ARTICLE{Villarroel2016-wr,
+  title    = "{HostPhinder}: A Phage Host Prediction Tool",
+  author   = "Villarroel, Julia and Kleinheinz, Kortine Annina and Jurtz,
+              Vanessa Isabell and Zschach, Henrike and Lund, Ole and Nielsen,
+              Morten and Larsen, Mette Voldby",
+  abstract = "The current dramatic increase of antibiotic resistant bacteria
+              has revitalised the interest in bacteriophages as alternative
+              antibacterial treatment. Meanwhile, the development of
+              bioinformatics methods for analysing genomic data places
+              high-throughput approaches for phage characterization within
+              reach. Here, we present HostPhinder, a tool aimed at predicting
+              the bacterial host of phages by examining the phage genome
+              sequence. Using a reference database of 2196 phages with known
+              hosts, HostPhinder predicts the host species of a query phage as
+              the host of the most genomically similar reference phages. As a
+              measure of genomic similarity the number of co-occurring k-mers
+              (DNA sequences of length k) is used. Using an independent
+              evaluation set, HostPhinder was able to correctly predict host
+              genus and species for 81\% and 74\% of the phages respectively,
+              giving predictions for more phages than BLAST and significantly
+              outperforming BLAST on phages for which both had predictions.
+              HostPhinder predictions on phage draft genomes from the INTESTI
+              phage cocktail corresponded well with the advertised targets of
+              the cocktail. Our study indicates that for most phages genomic
+              similarity correlates well with related bacterial hosts.
+              HostPhinder is available as an interactive web service [1] and as
+              a stand alone download from the Docker registry [2].",
+  journal  = "Viruses",
+  volume   =  8,
+  number   =  5,
+  month    =  may,
+  year     =  2016,
+  keywords = "genome; k-mers; prediction; ``host specificity''",
+  language = "en"
+}
+
+@ARTICLE{Hayes2017-sq,
+  title    = "Metagenomic Approaches to Assess Bacteriophages in Various
+              Environmental Niches",
+  author   = "Hayes, Stephen and Mahony, Jennifer and Nauta, Arjen and van
+              Sinderen, Douwe",
+  abstract = "Bacteriophages are ubiquitous and numerous parasites of bacteria
+              and play a critical evolutionary role in virtually every
+              ecosystem, yet our understanding of the extent of the diversity
+              and role of phages remains inadequate for many ecological niches,
+              particularly in cases in which the host is unculturable. During
+              the past 15 years, the emergence of the field of viral
+              metagenomics has drastically enhanced our ability to analyse the
+              so-called viral 'dark matter' of the biosphere. Here, we review
+              the evolution of viral metagenomic methodologies, as well as
+              providing an overview of some of the most significant
+              applications and findings in this field of research.",
+  journal  = "Viruses",
+  volume   =  9,
+  number   =  6,
+  month    =  may,
+  year     =  2017,
+  keywords = "marine; microbiota; phage; virome",
+  language = "en"
+}
+
+@ARTICLE{Mihara2016-oa,
+  title    = "Linking Virus Genomes with Host Taxonomy",
+  author   = "Mihara, Tomoko and Nishimura, Yosuke and Shimizu, Yugo and
+              Nishiyama, Hiroki and Yoshikawa, Genki and Uehara, Hideya and
+              Hingamp, Pascal and Goto, Susumu and Ogata, Hiroyuki",
+  abstract = "Environmental genomics can describe all forms of
+              organisms--cellular and viral--present in a community. The
+              analysis of such eco-systems biology data relies heavily on
+              reference databases, e.g., taxonomy or gene function databases.
+              Reference databases of symbiosis sensu lato, although essential
+              for the analysis of organism interaction networks, are lacking.
+              By mining existing databases and literature, we here provide a
+              comprehensive and manually curated database of taxonomic links
+              between viruses and their cellular hosts.",
+  journal  = "Viruses",
+  volume   =  8,
+  number   =  3,
+  pages    = "66",
+  month    =  mar,
+  year     =  2016,
+  keywords = "GenomeNet; KEGG; database; genomes; taxonomy; virus-host
+              interactions",
+  language = "en"
+}
+
+@ARTICLE{Ren2017-ef,
+  title    = "{VirFinder}: a novel k-mer based tool for identifying viral
+              sequences from assembled metagenomic data",
+  author   = "Ren, Jie and Ahlgren, Nathan A and Lu, Yang Young and Fuhrman,
+              Jed A and Sun, Fengzhu",
+  abstract = "BACKGROUND: Identifying viral sequences in mixed metagenomes
+              containing both viral and host contigs is a critical first step
+              in analyzing the viral component of samples. Current tools for
+              distinguishing prokaryotic virus and host contigs primarily use
+              gene-based similarity approaches. Such approaches can
+              significantly limit results especially for short contigs that
+              have few predicted proteins or lack proteins with similarity to
+              previously known viruses. METHODS: We have developed VirFinder,
+              the first k-mer frequency based, machine learning method for
+              virus contig identification that entirely avoids gene-based
+              similarity searches. VirFinder instead identifies viral sequences
+              based on our empirical observation that viruses and hosts have
+              discernibly different k-mer signatures. VirFinder's performance
+              in correctly identifying viral sequences was tested by training
+              its machine learning model on sequences from host and viral
+              genomes sequenced before 1 January 2014 and evaluating on
+              sequences obtained after 1 January 2014. RESULTS: VirFinder had
+              significantly better rates of identifying true viral contigs
+              (true positive rates (TPRs)) than VirSorter, the current
+              state-of-the-art gene-based virus classification tool, when
+              evaluated with either contigs subsampled from complete genomes or
+              assembled from a simulated human gut metagenome. For example, for
+              contigs subsampled from complete genomes, VirFinder had 78-,
+              2.4-, and 1.8-fold higher TPRs than VirSorter for 1, 3, and 5 kb
+              contigs, respectively, at the same false positive rates as
+              VirSorter (0, 0.003, and 0.006, respectively), thus VirFinder
+              works considerably better for small contigs than VirSorter.
+              VirFinder furthermore identified several recently sequenced virus
+              genomes (after 1 January 2014) that VirSorter did not and that
+              have no nucleotide similarity to previously sequenced viruses,
+              demonstrating VirFinder's potential advantage in identifying
+              novel viral sequences. Application of VirFinder to a set of human
+              gut metagenomes from healthy and liver cirrhosis patients reveals
+              higher viral diversity in healthy individuals than cirrhosis
+              patients. We also identified contig bins containing
+              crAssphage-like contigs with higher abundance in healthy patients
+              and a putative Veillonella genus prophage associated with
+              cirrhosis patients. CONCLUSIONS: This innovative k-mer based tool
+              complements gene-based approaches and will significantly improve
+              prokaryotic viral sequence identification, especially for
+              metagenomic-based studies of viral ecology.",
+  journal  = "Microbiome",
+  volume   =  5,
+  number   =  1,
+  pages    = "69",
+  month    =  jul,
+  year     =  2017,
+  keywords = "Human gut; Liver cirrhosis; Metagenome; Virus; k-mer",
+  language = "en"
+}
+
+@UNPUBLISHED{Tampuu2019-iu,
+  title    = "{ViraMiner}: Deep Learning on Raw {DNA} Sequences for Identifying
+              Viral Genomes in Human Samples",
+  author   = "Tampuu, Ardi and Bzhalava, Zurab and Dillner, Joakim and Vicente,
+              Raul",
+  abstract = "ABSTRACT Despite its clinical importance, detection of highly
+              divergent or yet unknown viruses is a major challenge. When human
+              samples are sequenced, conventional alignments classify many
+              assembled contigs as ``unknown'' since many of the sequences are
+              not similar to known genomes. In this work, we developed
+              ViraMiner, a deep learning-based method to identify viruses in
+              various human biospecimens. ViraMiner contains two branches of
+              Convolutional Neural Networks designed to detect both patterns
+              and pattern-frequencies on raw metagenomics contigs. The training
+              dataset included sequences obtained from 19 metagenomic
+              experiments which were analyzed and labeled by BLAST. The model
+              achieves significantly improved accuracy compared to other
+              machine learning methods for viral genome classification. Using
+              300 bp contigs ViraMiner achieves 0.923 area under the ROC curve.
+              To our knowledge, this is the first machine learning methodology
+              that can detect the presence of viral sequences among raw
+              metagenomic contigs from diverse human samples. We suggest that
+              the proposed model captures different types of information of
+              genome composition, and can be used as a recommendation system to
+              further investigate sequences labeled as ``unknown'' by
+              conventional alignment methods. Exploring these highly-divergent
+              viruses, in turn, can enhance our knowledge of infectious causes
+              of diseases.",
+  journal  = "bioRxiv",
+  pages    = "602656",
+  month    =  apr,
+  year     =  2019,
+  language = "en"
+}
+
+
+@ARTICLE{Zhang2017-ew,
+  title    = "Prediction of virus-host infectious association by supervised
+              learning methods",
+  author   = "Zhang, Mengge and Yang, Lianping and Ren, Jie and Ahlgren, Nathan
+              A and Fuhrman, Jed A and Sun, Fengzhu",
+  abstract = "BACKGROUND: The study of virus-host infectious association is
+              important for understanding the functions and dynamics of
+              microbial communities. Both cellular and fractionated viral
+              metagenomic data generate a large number of viral contigs with
+              missing host information. Although relative simple methods based
+              on the similarity between the word frequency vectors of viruses
+              and bacterial hosts have been developed to study virus-host
+              associations, the problem is significantly understudied. We
+              hypothesize that machine learning methods based on word
+              frequencies can be efficiently used to study virus-host
+              infectious associations. METHODS: We investigate four different
+              representations of word frequencies of viral sequences including
+              the relative word frequency and three normalized word frequencies
+              by subtracting the number of expected from the observed word
+              counts. We also study five machine learning methods including
+              logistic regression, support vector machine, random forest,
+              Gaussian naive Bayes and Bernoulli naive Bayes for separating
+              infectious from non-infectious viruses for nine bacterial host
+              genera with at least 45 infecting viruses. Area under the
+              receiver operating characteristic curve (AUC) is used to compare
+              the performance of different machine learning method and feature
+              combinations. We then evaluate the performance of the best method
+              for the identification of the hosts of contigs in metagenomic
+              studies. We also develop a maximum likelihood method to estimate
+              the fraction of true infectious viruses for a given host in viral
+              tagging experiments. RESULTS: Based on nine bacterial host genera
+              with at least 45 infectious viruses, we show that random forest
+              together with the relative word frequency vector performs the
+              best in identifying viruses infecting particular hosts. For all
+              the nine host genera, the AUC is over 0.85 and for five of them,
+              the AUC is higher than 0.98 when the word size is 6 indicating
+              the high accuracy of using machine learning approaches for
+              identifying viruses infecting particular hosts. We also show that
+              our method can predict the hosts of viral contigs of length at
+              least 1kbps in metagenomic studies with high accuracy. The random
+              forest together with word frequency vector outperforms current
+              available methods based on Manhattan and [Formula: see text]
+              dissimilarity measures. Based on word frequencies, we estimate
+              that about 95\% of the identified T4-like viruses in viral
+              tagging experiment infect Synechococcus, while only about 29\% of
+              the identified non-T4-like viruses and 30\% of the contigs in the
+              study potentially infect Synechococcus. CONCLUSIONS: The random
+              forest machine learning method together with the relative word
+              frequencies as features of viruses can be used to predict viruses
+              and viral contigs for specific bacterial hosts. The maximum
+              likelihood approach can be used to estimate the fraction of true
+              infectious associated viruses in viral tagging experiments.",
+  journal  = "BMC Bioinformatics",
+  volume   =  18,
+  number   = "Suppl 3",
+  pages    = "60",
+  month    =  mar,
+  year     =  2017,
+  language = "en"
+}
+
+@UNPUBLISHED{Wang2019-oi,
+  title    = "A network-based integrated framework for predicting virus-host
+              interactions",
+  author   = "Wang, Weili and Ren, Jie and Tang, Kujin and Dart, Emily and
+              Ignacio-Espinoza, Julio Cesar and Fuhrman, Jed A and Braun,
+              Jonathan and Sun, Fengzhu and Ahlgren, Nathan A",
+  abstract = "Metagenomic sequencing has greatly enhanced the discovery of
+              viral genomic sequences; however it remains challenging to
+              identify the host(s) of these new viruses. We developed
+              VirHostMatcher-Net, a flexible, network-based, Markov random
+              field framework for predicting virus-host interactions using
+              multiple, integrated features: CRISPR sequences, sequence
+              homology, and alignment-free similarity measures (![Graphic][1]
+              and WIsH). Evaluation of this method on a benchmark set of 1,075
+              known viruses-host pairs yielded host prediction accuracy of 62\%
+              and 85\% at the genus and phylum levels, representing 12-27\% and
+              10-18\% improvement respectively over previous single-feature
+              prediction approaches. We applied our host-prediction tool to
+              three metagenomic virus datasets: human gut crAss-like phages,
+              marine viruses, and viruses recovered from globally-distributed,
+              diverse habitats. Host predictions were frequently consistent
+              with those of previous studies, but more importantly, this new
+              tool made many more confident predictions than previous tools, up
+              to 6-fold more (n > 60,000), greatly expanding the diversity of
+              known virus-host interactions. [1]: /embed/inline-graphic-1.gif",
+  journal  = "bioRxiv",
+  pages    = "505768",
+  month    =  aug,
+  year     =  2019,
+  language = "en"
+}
+
+@ARTICLE{Chibani-Chennoufi2004-dl,
+  title    = "Phage-host interaction: an ecological perspective",
+  author   = "Chibani-Chennoufi, Sandra and Bruttin, Anne and Dillmann,
+              Marie-Lise and Br{\"u}ssow, Harald",
+  journal  = "J. Bacteriol.",
+  volume   =  186,
+  number   =  12,
+  pages    = "3677--3686",
+  month    =  jun,
+  year     =  2004,
+  language = "en"
+}
+
+
+@MISC{Edwards_undated-kq,
+  title       = "{PhiSpy}",
+  author      = "Edwards, Rob",
+  abstract    = "Prediction of prophages from bacterial genomes. Contribute to
+                 linsalrob/PhiSpy development by creating an account on GitHub.",
+  institution = "Github"
+}
+
+
+@ARTICLE{Chibani2019-dh,
+  title    = "Classifying the Unclassified: A Phage Classification Method",
+  author   = "Chibani, Cynthia Maria and Farr, Anton and Klama, Sandra and
+              Dietrich, Sascha and Liesegang, Heiko",
+  abstract = "This work reports the method ClassiPhage to classify phage
+              genomes using sequence derived taxonomic features. ClassiPhage
+              uses a set of phage specific Hidden Markov Models (HMMs)
+              generated from clusters of related proteins. The method was
+              validated on all publicly available genomes of phages that are
+              known to infect Vibrionaceae. The phages belong to the
+              well-described phage families of Myoviridae, Podoviridae,
+              Siphoviridae, and Inoviridae. The achieved classification is
+              consistent with the assignments of the International Committee on
+              Taxonomy of Viruses (ICTV), all tested phages were assigned to
+              the corresponding group of the ICTV-database. In addition, 44 out
+              of 58 genomes of Vibrio phages not yet classified could be
+              assigned to a phage family. The remaining 14 genomes may
+              represent phages of new families or subfamilies. Comparative
+              genomics indicates that the ability of the approach to identify
+              and classify phages is correlated to the conserved genomic
+              organization. ClassiPhage classifies phages exclusively based on
+              genome sequence data and can be applied on distinct phage genomes
+              as well as on prophage regions within host genomes. Possible
+              applications include (a) classifying phages from assembled
+              metagenomes; and (b) the identification and classification of
+              integrated prophages and the splitting of phage families into
+              subfamilies.",
+  journal  = "Viruses",
+  volume   =  11,
+  number   =  2,
+  month    =  feb,
+  year     =  2019,
+  keywords = "Hidden Markov Models; Inoviridae; Keywords; Myoviridae;
+              Podoviridae; Siphoviridae; Vibrionaceae; classification; phages;
+              protein coding sequences; vibriophages",
+  language = "en"
+}
+
+@ARTICLE{Canchaya2003-it,
+  title    = "Prophage genomics",
+  author   = "Canchaya, Carlos and Proux, Caroline and Fournous, Ghislain and
+              Bruttin, Anne and Br{\"u}ssow, Harald",
+  abstract = "The majority of the bacterial genome sequences deposited in the
+              National Center for Biotechnology Information database contain
+              prophage sequences. Analysis of the prophages suggested that
+              after being integrated into bacterial genomes, they undergo a
+              complex decay process consisting of inactivating point mutations,
+              genome rearrangements, modular exchanges, invasion by further
+              mobile DNA elements, and massive DNA deletion. We review the
+              technical difficulties in defining such altered prophage
+              sequences in bacterial genomes and discuss theoretical frameworks
+              for the phage-bacterium interaction at the genomic level. The
+              published genome sequences from three groups of eubacteria (low-
+              and high-G+C gram-positive bacteria and gamma-proteobacteria)
+              were screened for prophage sequences. The prophages from
+              Streptococcus pyogenes served as test case for theoretical
+              predictions of the role of prophages in the evolution of
+              pathogenic bacteria. The genomes from further human, animal, and
+              plant pathogens, as well as commensal and free-living bacteria,
+              were included in the analysis to see whether the same principles
+              of prophage genomics apply for bacteria living in different
+              ecological niches and coming from distinct phylogenetical
+              affinities. The effect of selection pressure on the host
+              bacterium is apparently an important force shaping the prophage
+              genomes in low-G+C gram-positive bacteria and
+              gamma-proteobacteria.",
+  journal  = "Microbiol. Mol. Biol. Rev.",
+  volume   =  67,
+  number   =  2,
+  pages    = "238--76, table of contents",
+  month    =  jun,
+  year     =  2003,
+  language = "en"
+}
+
+% The entry below contains non-ASCII chars that could not be converted
+% to a LaTeX equivalent.
+@ARTICLE{Casjens2003-hk,
+  title     = "Prophages and bacterial genomics: what have we learned so far?",
+  author    = "Casjens, S",
+  abstract  = "Epigraph There is something fascinating about science. One gets
+               such wholesale returns of conjecture out of such a trifling
+               investment of fact. Mark Twain 1883 Life on the Mississippi
+               Summary Bacterial genome nucleotide sequences are being
+               completed at a rapid and …",
+  journal   = "Mol. Microbiol.",
+  publisher = "Wiley Online Library",
+  volume    =  49,
+  number    =  2,
+  pages     = "277--300",
+  year      =  2003
+}
+
+@ARTICLE{Fouts2006-nt,
+  title    = "{Phage\_Finder}: automated identification and classification of
+              prophage regions in complete bacterial genome sequences",
+  author   = "Fouts, Derrick E",
+  abstract = "Phage\_Finder, a heuristic computer program, was created to
+              identify prophage regions in completed bacterial genomes. Using a
+              test dataset of 42 bacterial genomes whose prophages have been
+              manually identified, Phage\_Finder found 91\% of the regions,
+              resulting in 7\% false positive and 9\% false negative prophages.
+              A search of 302 complete bacterial genomes predicted 403 putative
+              prophage regions, accounting for 2.7\% of the total bacterial
+              DNA. Analysis of the 285 putative attachment sites revealed tRNAs
+              are targets for integration slightly more frequently (33\%) than
+              intergenic (31\%) or intragenic (28\%) regions, while tmRNAs were
+              targeted in 8\% of the regions. The most popular tRNA targets
+              were Arg, Leu, Ser and Thr. Mapping of the insertion point on a
+              consensus tRNA molecule revealed novel insertion points on the 5'
+              side of the D loop, the 3' side of the anticodon loop and the
+              anticodon. A novel method of constructing phylogenetic trees of
+              phages and prophages was developed based on the mean of the BLAST
+              score ratio (BSR) of the phage/prophage proteomes. This method
+              verified many known bacteriophage groups, making this a useful
+              tool for predicting the relationships of prophages from bacterial
+              genomes.",
+  journal  = "Nucleic Acids Res.",
+  volume   =  34,
+  number   =  20,
+  pages    = "5839--5851",
+  month    =  oct,
+  year     =  2006,
+  language = "en"
+}
+
+@ARTICLE{Arndt2017-rl,
+  title    = "{PHAST}, {PHASTER} and {PHASTEST}: Tools for finding prophage in
+              bacterial genomes",
+  author   = "Arndt, David and Marcu, Ana and Liang, Yongjie and Wishart, David
+              S",
+  abstract = "PHAST (PHAge Search Tool) and its successor PHASTER (PHAge Search
+              Tool - Enhanced Release) have become two of the most widely used
+              web servers for identifying putative prophages in bacterial
+              genomes. Here we review the main capabilities of these web
+              resources, provide some practical guidance regarding their use
+              and discuss possible future improvements. PHAST, which was first
+              described in 2011, made its debut just as whole bacterial genome
+              sequencing and was becoming inexpensive and relatively routine.
+              PHAST quickly gained popularity among bacterial genome
+              researchers because of its web accessibility, its ease of use
+              along with its enhanced accuracy and rapid processing times.
+              PHASTER, which appeared in 2016, provided a number of much-needed
+              enhancements to the PHAST server, including greater processing
+              speed (to cope with very large submission volumes), increased
+              database sizes, a more modern user interface, improved graphical
+              displays and support for metagenomic submissions. Continuing
+              developments in the field, along with increased interest in
+              automated phage and prophage finding, have already led to several
+              improvements to the PHASTER server and will soon lead to the
+              development of a successor to PHASTER (to be called PHASTEST).",
+  journal  = "Brief. Bioinform.",
+  month    =  sep,
+  year     =  2017,
+  keywords = "bacterial genome; bioinformatics; metagenomics; phage; prophage",
+  language = "en"
+}
+
+@ARTICLE{Arndt2016-bm,
+  title    = "{PHASTER}: a better, faster version of the {PHAST} phage search
+              tool",
+  author   = "Arndt, David and Grant, Jason R and Marcu, Ana and Sajed, Tanvir
+              and Pon, Allison and Liang, Yongjie and Wishart, David S",
+  abstract = "PHASTER (PHAge Search Tool - Enhanced Release) is a significant
+              upgrade to the popular PHAST web server for the rapid
+              identification and annotation of prophage sequences within
+              bacterial genomes and plasmids. Although the steps in the phage
+              identification pipeline in PHASTER remain largely the same as in
+              the original PHAST, numerous software improvements and
+              significant hardware enhancements have now made PHASTER faster,
+              more efficient, more visually appealing and much more user
+              friendly. In particular, PHASTER is now 4.3$\times$ faster than
+              PHAST when analyzing a typical bacterial genome. More
+              specifically, software optimizations have made the backend of
+              PHASTER 2.7X faster than PHAST, while the addition of 80 CPUs to
+              the PHASTER compute cluster are responsible for the remaining
+              speed-up. PHASTER can now process a typical bacterial genome in 3
+              min from the raw sequence alone, or in 1.5 min when given a
+              pre-annotated GenBank file. A number of other optimizations have
+              also been implemented, including automated algorithms to reduce
+              the size and redundancy of PHASTER's databases, improvements in
+              handling multiple (metagenomic) queries and higher user traffic,
+              along with the ability to perform automated look-ups against 14
+              000 previously PHAST/PHASTER annotated bacterial genomes (which
+              can lead to complete phage annotations in seconds as opposed to
+              minutes). PHASTER's web interface has also been entirely
+              rewritten. A new graphical genome browser has been added,
+              gene/genome visualization tools have been improved, and the
+              graphical interface is now more modern, robust and user-friendly.
+              PHASTER is available online at www.phaster.ca.",
+  journal  = "Nucleic Acids Res.",
+  volume   =  44,
+  number   = "W1",
+  pages    = "W16--21",
+  month    =  jul,
+  year     =  2016,
+  language = "en"
+}
+
