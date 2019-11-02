@@ -43,6 +43,10 @@ A review of [An Integrative Approach to Virus–Host Protein–Protein Interacti
 * [Robust taxonomic classification of uncharted microbial sequences and bins with CAT and BAT](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1817-x)
 * [MetaVir](http://metavir-meb.univ-bpclermont.fr/) and [paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-15-76)
 
+# Viral Tagging
+* [Defining the human gut host–phage network through single-cell viral tagging](https://www.nature.com/articles/s41564-019-0526-2)
+* [Viral tagging reveals discrete populations in Synechococcus viral genome sequence space](https://www.nature.com/articles/nature13459)
+
 # Predicting Environments
 * [Metagenomic Approaches to Assess Bacteriophages in Various Environmental Niches](https://www.mdpi.com/1999-4915/9/6/127) 
 
