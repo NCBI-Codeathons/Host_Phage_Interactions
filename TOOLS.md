@@ -46,6 +46,7 @@ A review of [An Integrative Approach to Virus–Host Protein–Protein Interacti
 # Viral Tagging
 * [Defining the human gut host–phage network through single-cell viral tagging](https://www.nature.com/articles/s41564-019-0526-2)
 * [Viral tagging reveals discrete populations in Synechococcus viral genome sequence space](https://www.nature.com/articles/nature13459)
+* [Contrasting Life Strategies of Viruses that Infect Photo- and Heterotrophic Bacteria, as Revealed by Viral Tagging](https://mbio.asm.org/content/3/6/e00373-12)
 
 # Predicting Environments
 * [Metagenomic Approaches to Assess Bacteriophages in Various Environmental Niches](https://www.mdpi.com/1999-4915/9/6/127) 
