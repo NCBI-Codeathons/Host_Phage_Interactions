@@ -13,11 +13,13 @@ process minced {
     file fasta from input_channel
 
     output:
-    file '*.gff' into minced_output
+    file '*.gff' into minced_output_gff
+    file '*.crisprs' into minced_output_crisprs
+    file '*_spacers.fa' into minced_output_spacers_fa
 
     """
     echo $fasta
-    minced -gffFull $fasta tmp.crisprs ${fasta.simpleName}.gff
+    minced -spacers -gffFull $fasta ${fasta.simpleName}.crisprs ${fasta.simpleName}.gff
     """
 }
 
