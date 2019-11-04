@@ -1,6 +1,18 @@
 # Host_Phage_Interactions
 Understanding how Phages Affect Microbial Disease
 
+
+
+![alt text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/Flow.jpg)
+
+
+
+
+
+
+
+
+
 ## Please cite our work -- here is the ICMJE Standard Citation:
 
 ### ...and a link to the DOI:
