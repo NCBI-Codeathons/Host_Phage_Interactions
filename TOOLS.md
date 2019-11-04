@@ -43,6 +43,11 @@ A review of [An Integrative Approach to Virus–Host Protein–Protein Interacti
 * [Robust taxonomic classification of uncharted microbial sequences and bins with CAT and BAT](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1817-x)
 * [MetaVir](http://metavir-meb.univ-bpclermont.fr/) and [paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-15-76)
 
+# Viral Tagging
+* [Defining the human gut host–phage network through single-cell viral tagging](https://www.nature.com/articles/s41564-019-0526-2)
+* [Viral tagging reveals discrete populations in Synechococcus viral genome sequence space](https://www.nature.com/articles/nature13459)
+* [Contrasting Life Strategies of Viruses that Infect Photo- and Heterotrophic Bacteria, as Revealed by Viral Tagging](https://mbio.asm.org/content/3/6/e00373-12)
+
 # Predicting Environments
 * [Metagenomic Approaches to Assess Bacteriophages in Various Environmental Niches](https://www.mdpi.com/1999-4915/9/6/127) 
 
@@ -59,6 +64,7 @@ A review of [An Integrative Approach to Virus–Host Protein–Protein Interacti
 * [Prophage Hunter: an integrative hunting tool for active prophages](https://academic.oup.com/nar/article/47/W1/W74/5494712)
 * [ProphET, prophage estimation tool: A stand-alone prophage sequence prediction tool with self-updating reference database](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0223364)
 * [PhageWeb](http://computationalbiology.ufpa.br/phageweb) and [paper](https://www.frontiersin.org/articles/10.3389/fgene.2018.00644/full) *Note:* this appears to not be available any longer, although there is this [API](https://github.com/phagewebufpa/API)
+* [Phigaro](https://github.com/bobeobibo/phigaro) and [paper](https://www.biorxiv.org/content/biorxiv/early/2019/04/22/598243.full.pdf)
 
 # Other tools and approaches
 

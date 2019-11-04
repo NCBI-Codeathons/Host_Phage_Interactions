@@ -1393,169 +1393,166 @@
 }
 
 
-@ARTICLE{Skennerton2013-jn,
-  title    = "Crass: identification and reconstruction of {CRISPR} from
-              unassembled metagenomic data",
-  author   = "Skennerton, Connor T and Imelfort, Michael and Tyson, Gene W",
-  abstract = "Clustered regularly interspaced short palindromic repeats
-              (CRISPR) constitute a bacterial and archaeal adaptive immune
-              system that protect against bacteriophage (phage). Analysis of
-              CRISPR loci reveals the history of phage infections and provides
-              a direct link between phage and their hosts. All current tools
-              for CRISPR identification have been developed to analyse
-              completed genomes and are not well suited to the analysis of
-              metagenomic data sets, where CRISPR loci are difficult to
-              assemble owing to their repetitive structure and population
-              heterogeneity. Here, we introduce a new algorithm, Crass, which
-              is designed to identify and reconstruct CRISPR loci from raw
-              metagenomic data without the need for assembly or prior knowledge
-              of CRISPR in the data set. CRISPR in assembled data are often
-              fragmented across many contigs/scaffolds and do not fully
-              represent the population heterogeneity of CRISPR loci. Crass
-              identified substantially more CRISPR in metagenomes previously
-              analysed using assembly-based approaches. Using Crass, we were
-              able to detect CRISPR that contained spacers with sequence
-              homology to phage in the system, which would not have been
-              identified using other approaches. The increased sensitivity,
-              specificity and speed of Crass will facilitate comprehensive
-              analysis of CRISPRs in metagenomic data sets, increasing our
-              understanding of phage-host interactions and co-evolution within
-              microbial communities.",
-  journal  = "Nucleic Acids Res.",
-  volume   =  41,
-  number   =  10,
-  pages    = "e105",
-  month    =  may,
-  year     =  2013,
-  language = "en"
-}
-
-@ARTICLE{Lei2016-ck,
-  title    = "Assemble {CRISPRs} from metagenomic sequencing data",
-  author   = "Lei, Jikai and Sun, Yanni",
-  abstract = "MOTIVATION: Clustered regularly interspaced short palindromic
-              repeats and associated proteins (CRISPR-Cas) allows more specific
-              and efficient gene editing than all previous genetic engineering
-              systems. These exciting discoveries stem from the finding of the
-              CRISPR system being an adaptive immune system that protects the
-              prokaryotes against exogenous genetic elements such as phages.
-              Despite the exciting discoveries, almost all knowledge about
-              CRISPRs is based only on microorganisms that can be isolated,
-              cultured and sequenced in labs. However, about 95\% of bacterial
-              species cannot be cultured in labs. The fast accumulation of
-              metagenomic data, which contains DNA sequences of microbial
-              species from natural samples, provides a unique opportunity for
-              CRISPR annotation in uncultivable microbial species. However, the
-              large amount of data, heterogeneous coverage and shared leader
-              sequences of some CRISPRs pose challenges for identifying CRISPRs
-              efficiently in metagenomic data. RESULTS: In this study, we
-              developed a CRISPR finding tool for metagenomic data without
-              relying on generic assembly, which is error-prone and
-              computationally expensive for complex data. Our tool can run on
-              commonly available machines in small labs. It employs properties
-              of CRISPRs to decompose generic assembly into local assembly. We
-              tested it on both mock and real metagenomic data and benchmarked
-              the performance with state-of-the-art tools. AVAILABILITY AND
-              IMPLEMENTATION: The source code and the documentation of
-              metaCRISPR is available at
-              https://github.com/hangelwen/metaCRISPR CONTACT:
-              yannisun@msu.edu.",
-  journal  = "Bioinformatics",
-  volume   =  32,
-  number   =  17,
-  pages    = "i520--i528",
+@ARTICLE{Deng2014-we,
+  title    = "Viral tagging reveals discrete populations in Synechococcus viral
+              genome sequence space",
+  author   = "Deng, Li and Ignacio-Espinoza, J Cesar and Gregory, Ann C and
+              Poulos, Bonnie T and Weitz, Joshua S and Hugenholtz, Philip and
+              Sullivan, Matthew B",
+  abstract = "Microbes and their viruses drive myriad processes across
+              ecosystems ranging from oceans and soils to bioreactors and
+              humans. Despite this importance, microbial diversity is only now
+              being mapped at scales relevant to nature, while the viral
+              diversity associated with any particular host remains little
+              researched. Here we quantify host-associated viral diversity
+              using viral-tagged metagenomics, which links viruses to specific
+              host cells for high-throughput screening and sequencing. In a
+              single experiment, we screened 10(7) Pacific Ocean viruses
+              against a single strain of Synechococcus and found that naturally
+              occurring cyanophage genome sequence space is statistically
+              clustered into discrete populations. These population-based,
+              host-linked viral ecological data suggest that, for this single
+              host and seawater sample alone, there are at least 26
+              double-stranded DNA viral populations with estimated relative
+              abundances ranging from 0.06 to 18.2\%. These populations include
+              previously cultivated cyanophage and new viral types missed by
+              decades of isolate-based studies. Nucleotide identities of
+              homologous genes mostly varied by less than 1\% within
+              populations, even in hypervariable genome regions, and by 42-71\%
+              between populations, which provides benchmarks for viral
+              metagenomics and genome-based viral species definitions. Together
+              these findings showcase a new approach to viral ecology that
+              quantitatively links objectively defined environmental viral
+              populations, and their genomes, to their hosts.",
+  journal  = "Nature",
+  volume   =  513,
+  number   =  7517,
+  pages    = "242--245",
   month    =  sep,
-  year     =  2016,
+  year     =  2014,
+  language = "eng"
+}
+
+@ARTICLE{Dzunkova2019-di,
+  title    = "Defining the human gut host-phage network through single-cell
+              viral tagging",
+  author   = "D{\v z}unkov{\'a}, M{\'a}ria and Low, Soo Jen and Daly, Joshua N
+              and Deng, Li and Rinke, Christian and Hugenholtz, Philip",
+  abstract = "Viral discovery is accelerating at an unprecedented rate due to
+              continuing advances in culture-independent sequence-based
+              analyses. One important facet of this discovery is identification
+              of the hosts of these recently characterized uncultured viruses.
+              To this end, we have adapted the viral tagging approach, which
+              bypasses the need for culture-based methods to identify
+              host-phage pairings. Fluorescently labelled anonymous virions
+              adsorb to unlabelled anonymous bacterial host cells, which are
+              then individually sorted as host-phage pairs, followed by genome
+              amplification and high-throughput sequencing to establish the
+              identities of both the host and the attached virus(es). We
+              demonstrate single-cell viral tagging using the faecal
+              microbiome, including cross-tagging of viruses and bacteria
+              between human subjects. A total of 363 unique host-phage pairings
+              were predicted, most of which were subject-specific and involved
+              previously uncharacterized viruses despite the majority of their
+              bacterial hosts having known taxonomy. One-fifth of these pairs
+              were confirmed by multiple individual tagged cells. Viruses
+              targeting more than one bacterial species were conspicuously
+              absent in the host-phage network, suggesting that phages are not
+              major vectors of inter-species horizontal gene transfer in the
+              human gut. A high level of cross-reactivity between phages and
+              bacteria from different subjects was noted despite
+              subject-specific viral profiles, which has implications for
+              faecal microbiota transplant therapy.",
+  journal  = "Nat Microbiol",
+  month    =  aug,
+  year     =  2019,
   language = "en"
 }
 
-% The entry below contains non-ASCII chars that could not be converted
-% to a LaTeX equivalent.
-@ARTICLE{Rho2012-gf,
-  title    = "Diverse {CRISPRs} evolving in human microbiomes",
-  author   = "Rho, Mina and Wu, Yu-Wei and Tang, Haixu and Doak, Thomas G and
-              Ye, Yuzhen",
-  abstract = "CRISPR (Clustered Regularly Interspaced Short Palindromic
-              Repeats) loci, together with cas (CRISPR-associated) genes, form
-              the CRISPR/Cas adaptive immune system, a primary defense strategy
-              that eubacteria and archaea mobilize against foreign nucleic
-              acids, including phages and conjugative plasmids. Short spacer
-              sequences separated by the repeats are derived from foreign DNA
-              and direct interference to future infections. The availability of
-              hundreds of shotgun metagenomic datasets from the Human
-              Microbiome Project (HMP) enables us to explore the distribution
-              and diversity of known CRISPRs in human-associated microbial
-              communities and to discover new CRISPRs. We propose a targeted
-              assembly strategy to reconstruct CRISPR arrays, which
-              whole-metagenome assemblies fail to identify. For each known
-              CRISPR type (identified from reference genomes), we use its
-              direct repeat consensus sequence to recruit reads from each HMP
-              dataset and then assemble the recruited reads into CRISPR loci;
-              the unique spacer sequences can then be extracted for analysis.
-              We also identified novel CRISPRs or new CRISPR variants in
-              contigs from whole-metagenome assemblies and used targeted
-              assembly to more comprehensively identify these CRISPRs across
-              samples. We observed that the distributions of CRISPRs (including
-              64 known and 86 novel ones) are largely body-site specific. We
-              provide detailed analysis of several CRISPR loci, including novel
-              CRISPRs. For example, known streptococcal CRISPRs were identified
-              in most oral microbiomes, totaling ∼8,000 unique spacers: samples
-              resampled from the same individual and oral site shared the most
-              spacers; different oral sites from the same individual shared
-              significantly fewer, while different individuals had almost no
-              common spacers, indicating the impact of subtle niche differences
-              on the evolution of CRISPR defenses. We further demonstrate
-              potential applications of CRISPRs to the tracing of rare species
-              and the virus exposure of individuals. This work indicates the
-              importance of effective identification and characterization of
-              CRISPR loci to the study of the dynamic ecology of microbiomes.",
-  journal  = "PLoS Genet.",
-  volume   =  8,
+@ARTICLE{Deng2012-mv,
+  title    = "Contrasting life strategies of viruses that infect photo- and
+              heterotrophic bacteria, as revealed by viral tagging",
+  author   = "Deng, Li and Gregory, Ann and Yilmaz, Suzan and Poulos, Bonnie T
+              and Hugenholtz, Philip and Sullivan, Matthew B",
+  abstract = "Ocean viruses are ubiquitous and abundant and play important
+              roles in global biogeochemical cycles by means of their
+              mortality, horizontal gene transfer, and manipulation of host
+              metabolism. However, the obstacles involved in linking viruses to
+              their hosts in a high-throughput manner bottlenecks our ability
+              to understand virus-host interactions in complex communities. We
+              have developed a method called viral tagging (VT), which combines
+              mixtures of host cells and fluorescent viruses with flow
+              cytometry. We investigated multiple viruses which infect each of
+              two model marine bacteria that represent the slow-growing,
+              photoautotrophic genus Synechococcus (Cyanobacteria) and the
+              fast-growing, heterotrophic genus Pseudoalteromonas
+              (Gammaproteobacteria). Overall, viral tagging results for viral
+              infection were consistent with plaque and liquid infection assays
+              for cyanobacterial myo-, podo- and siphoviruses and some (myo-
+              and podoviruses) but not all (four siphoviruses) heterotrophic
+              bacterial viruses. Virus-tagged Pseudoalteromonas organisms were
+              proportional to the added viruses under varied infection
+              conditions (virus-bacterium ratios), while no more than 50\% of
+              the Synechococcus organisms were virus tagged even at viral
+              abundances that exceeded (5 to 10$\times$) that of their hosts.
+              Further, we found that host growth phase minimally impacts the
+              fraction of virus-tagged Synechococcus organisms while greatly
+              affecting phage adsorption to Pseudoalteromonas. Together these
+              findings suggest that at least two contrasting viral life
+              strategies exist in the oceans and that they likely reflect
+              adaptation to their host microbes. Looking forward to the point
+              at which the virus-tagging signature is well understood (e.g.,
+              for Synechococcus), application to natural communities should
+              begin to provide population genomic data at the proper scale for
+              predictively modeling two of the most abundant biological
+              entities on Earth. Viral study suffers from an inability to link
+              viruses to hosts en masse, and yet delineating ``who infects
+              whom'' is fundamental to viral ecology and predictive modeling.
+              This article describes viral tagging-a high-throughput method to
+              investigate virus-host interactions by combining the fluorescent
+              labeling of viruses for ``tagging'' host cells that can be
+              analyzed and sorted using flow cytometry. Two cultivated hosts
+              (the cyanobacterium Synechococcus and the gammaproteobacterium
+              Pseudoalteromonas) and their viruses (podo-, myo-, and
+              siphoviruses) were investigated to validate the method. These
+              lab-based experiments indicate that for most virus-host pairings,
+              VT (viral tagging) adsorption is equivalent to traditional
+              infection by liquid and plaque assays, with the exceptions being
+              confined to promiscuous adsorption by Pseudoalteromonas
+              siphoviruses. These experiments also reveal variability in life
+              strategies across these oceanic virus-host systems with respect
+              to infection conditions and host growth status, which highlights
+              the need for further model system characterization to break open
+              this virus-host interaction ``black box.''",
+  journal  = "MBio",
+  volume   =  3,
   number   =  6,
-  pages    = "e1002441",
-  month    =  jun,
   year     =  2012,
-  language = "en"
+  language = "eng"
 }
 
-@ARTICLE{Moller2017-au,
-  title    = "{MetaCRAST}: reference-guided extraction of {CRISPR} spacers from
-              unassembled metagenomes",
-  author   = "Moller, Abraham G and Liang, Chun",
-  abstract = "Clustered regularly interspaced short palindromic repeat (CRISPR)
-              systems are the adaptive immune systems of bacteria and archaea
-              against viral infection. While CRISPRs have been exploited as a
-              tool for genetic engineering, their spacer sequences can also
-              provide valuable insights into microbial ecology by linking
-              environmental viruses to their microbial hosts. Despite this
-              importance, metagenomic CRISPR detection remains a major
-              challenge. Here we present a reference-guided CRISPR spacer
-              detection tool (Metagenomic CRISPR Reference-Aided Search
-              Tool-MetaCRAST) that constrains searches based on user-specified
-              direct repeats (DRs). These DRs could be expected from assembly
-              or taxonomic profiles of metagenomes. We compared the performance
-              of MetaCRAST to those of two existing metagenomic CRISPR
-              detection tools-Crass and MinCED-using both real and simulated
-              acid mine drainage (AMD) and enhanced biological phosphorus
-              removal (EBPR) metagenomes. Our evaluation shows MetaCRAST
-              improves CRISPR spacer detection in real metagenomes compared to
-              the de novo CRISPR detection methods Crass and MinCED. Evaluation
-              on simulated metagenomes show it performs better than de novo
-              tools for Illumina metagenomes and comparably for 454
-              metagenomes. It also has comparable performance dependence on
-              read length and community composition, run time, and accuracy to
-              these tools. MetaCRAST is implemented in Perl, parallelizable
-              through the Many Core Engine (MCE), and takes metagenomic
-              sequence reads and direct repeat queries (FASTA or FASTQ) as
-              input. It is freely available for download at
-              https://github.com/molleraj/MetaCRAST.",
-  journal  = "PeerJ",
-  volume   =  5,
-  pages    = "e3788",
-  month    =  sep,
-  year     =  2017,
-  keywords = "CRISPR; Metagenomics; Microbial ecology; Repetitive sequences;
-              Virus-host interactions",
+
+
+@UNPUBLISHED{Starikova2019-ng,
+  title    = "Phigaro: high throughput prophage sequence annotation",
+  author   = "Starikova, Elizaveta V and Tikhonova, Polina O and Prianichnikov,
+              Nikita A and Rands, Chris M and Zdobnov, Evgeny M and Govorun,
+              Vadim M",
+  abstract = "Abstract Summary Phigaro is a standalone command-line application
+              that is able to detect prophage regions taking raw genome and
+              metagenome assemblies as an input. It also produces dynamic
+              annotated ``prophage genome maps'' and marks possible transposon
+              insertion spots inside prophages. It provides putative taxonomic
+              annotations that can distinguish tailed from non-tailed phages.
+              It is applicable for mining prophage regions from large
+              metagenomic datasets.Availability Source code for Phigaro is
+              freely available for download at
+              https://github.com/bobeobibo/phigaro along with test data. The
+              code is written in Python.",
+  journal  = "bioRxiv",
+  pages    = "598243",
+  month    =  apr,
+  year     =  2019,
   language = "en"
 }
 
