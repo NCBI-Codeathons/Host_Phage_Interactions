@@ -23,3 +23,23 @@ process minced {
     """
 }
 
+// minced_output_gff
+//     .concat( minced_output_crisprs, minced_output_spacers_fa )
+//     .map { file ->
+//         def key = file.name.toString().split('_spacers\\.fa|\\.gff|\\.crisprs')[0]
+//         return tuple(key, file)
+//     }
+//     .groupTuple(sort: true)
+//     .set{ combined_ch }
+
+process combine {
+    echo true
+
+    input:
+    file(fa) from minced_output_spacers_fa
+    // set key, tup from combined_ch
+
+    """
+    awk 'BEGIN{RS=">";OFS="\t"}NR>1{print "#"\$1,\$2}' $fa > tmp.csv
+    """
+}
