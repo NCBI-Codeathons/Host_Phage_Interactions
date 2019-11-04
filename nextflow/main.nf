@@ -7,6 +7,7 @@ input_channel = Channel.fromPath(params.input)
 process minced {
     echo true
     publishDir params.minced_out
+    errorStrategy 'ignore'
 
     input:
     file fasta from input_channel
@@ -15,8 +16,8 @@ process minced {
     file '*.gff' into minced_output
 
     """
-    minced $fasta -gffFull /dev/stdout | grep -v "^#" > ${fasta.simpleName}.gff
-    head *.gff
+    echo $fasta
+    minced -gffFull $fasta tmp.crisprs ${fasta.simpleName}.gff
     """
 }
 
