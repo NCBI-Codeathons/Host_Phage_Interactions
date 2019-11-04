@@ -9,7 +9,7 @@ Understanding how Phages Affect Microbial Disease
 
 ![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/Host_Pathogen_Interactions-secondaryworkflow.png)
 
-
+![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/WorkflowDiagram.jpg)
 
 
 
