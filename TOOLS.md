@@ -70,6 +70,12 @@ A review of [An Integrative Approach to Virus–Host Protein–Protein Interacti
 
 * [PhageTerm: a tool for fast and accurate determination of phage termini and packaging mechanism using next-generation sequencing data](https://sourceforge.net/projects/phageterm/) and [paper](https://www.nature.com/articles/s41598-017-07910-5)
 
+# Databases
+
+* [VOGDB](http://vogdb.org/)
+* [pVOG](http://dmk-brain.ecn.uiowa.edu/pVOGs/) and [paper](https://www.ncbi.nlm.nih.gov/pubmed/27789703)
+* [Virus-Host DB](https://www.genome.jp/virushostdb/)
+
 # CRISPr Finding
 
 * [CRISPRdigger](https://www.nature.com/articles/srep32942)
@@ -84,4 +90,7 @@ A review of [An Integrative Approach to Virus–Host Protein–Protein Interacti
 * [CRISPRTarget](http://bioanalysis.otago.ac.nz/CRISPRTarget/)
 * [CRISPRViz](https://github.com/CRISPRlab/CRISPRviz) and [paper](https://www.tandfonline.com/doi/abs/10.1080/15476286.2018.1493332?journalCode=krnb20)
 * [CRISPRStudio](https://github.com/moineaulab/CRISPRStudio)
+* [metaCRAST](https://github.com/molleraj/MetaCRAST) and [paper](https://peerj.com/articles/3788/)
+* [metaCRISPR](https://github.com/hangelwen/metaCRISPR) and [paper](https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btw456)
+* [crass](https://github.com/ctSkennerton/crass) (but not the real crAss) and [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3664793/?report=reader)
 
