@@ -35,7 +35,6 @@ process minced {
 
 process combine {
     echo true
-    publishDir params.minced_out
 
     input:
     file(fa) from minced_output_spacers_fa
