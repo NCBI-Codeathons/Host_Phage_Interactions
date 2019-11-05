@@ -39,6 +39,8 @@ x <- read.delim("Network_Data_v1.tsv",sep="\t",header=T,stringsAsFactors = F)
 head(x)
 
 x <- x %>% subset(select=c(virus.tax.id,host.tax.id)) %>% subset(host.tax.id!="")
+x$virus.tax.id <- as.character(x$virus.tax.id) %>% paste0("V.",.)
+x$host.tax.id <- as.character(x$host.tax.id) %>% paste0("H.",.)
 grph <- graph_from_edgelist(as.matrix(x), directed = F)
 # plot(grph,vertex.size=0.001,vertex.label="")
 
@@ -54,7 +56,7 @@ vir2 <- delete.vertices(vir,degree(vir)==0)
 
 setwd("~/Host_Phage_Interactions/images/")
 pdf("hosttaxid_virsharing.pdf",height=5,width=5)
-plot(bac2,vertex.size=0.001)
+plot(bac2,vertex.size=0.001,vertex.label.cex=0.25)
 dev.off()
 
 
