@@ -21,6 +21,7 @@ Understanding how Phages Affect Microbial Disease
 ### ...and a link to the DOI:
 
 ## Awesome Logo
+![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Escheria.png)
 
 ### You can make a free DOI with zenodo <link>
 
