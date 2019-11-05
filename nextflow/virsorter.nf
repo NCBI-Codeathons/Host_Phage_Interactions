@@ -31,6 +31,7 @@ process virsorter {
     """
     wrapper_phage_contigs_sorter_iPlant.pl \
       -f $genome \
+      --ncpu 1 \
       --db 2 \
       --wdir ${genome.simpleName}_output \
       --data-dir $db
