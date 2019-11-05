@@ -1,0 +1,6 @@
+# CRISPR Spacer Database
+Spacer database to infer host-virus interactions
+
+## Database Compilation
+
+CRISPR spacers were compiled from four distinct sources (1) the [CRISPRCasdb](https://crisprcas.i2bc.paris-saclay.fr/Home/Download), built using [CRISPRCasFinder](https://academic.oup.com/nar/article/46/W1/W246/5001162) completely assembled genomes from RefSeq, (2) [a set of spacers](https://www.liebertpub.com/doi/full/10.1089/crispr.2018.0034) built using [CRISPRDetect](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4869251/) on all prokaryotic assemblies in NCBI's RefSeq (December, 2017), (3) a set of spacers found in [24345 high-quality metagenome assembled genomes](https://www.nature.com/articles/s41586-019-1058-x) (MAGs) from the human microbiome using [MinCED](https://github.com/ctSkennerton/minced) (based on [CRT](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-8-209)), (4) a set of spacers from the ???? species-representative sequences in [GTDB]() found using MinCED, (5) a set of spacers found on [3000 diverse assmbled metagenomes](https://www.mdpi.com/2073-4425/10/9/714) using MinCED. In total this resulted in ???? unique spacer sequences across ???? species and/or metagenome contigs. 
