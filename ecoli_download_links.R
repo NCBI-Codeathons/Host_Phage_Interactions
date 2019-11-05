@@ -9,7 +9,12 @@ table(substr(ecoli$Assembly,1,3))
 all_gb <- read.delim("assembly_summary_genbank.txt",stringsAsFactors = F,skip=2,header=F)
 all_gb <- all_gb %>% subset(V1 %in% ecoli$Assembly)
 
-write(all_gb$V20,file="ecoli_links.txt")
+files <- paste(all_gb$V20,
+      all_gb$V20 %>% gsub(pattern=".*[/]",replace="") %>% paste0(.,"_genomic.fna.gz"),
+      sep="/")
+
+
+write(files,file="ecoli_links.txt")
 
 
 
