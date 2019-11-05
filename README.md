@@ -43,6 +43,8 @@ Overview Diagram
 
 ![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI-CRISPR-DB-Workflow.png)
 
+![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/ProphagePipeline.jpg)
+
 # File structure diagram 
 #### _Define paths, variable names, etc_
 
