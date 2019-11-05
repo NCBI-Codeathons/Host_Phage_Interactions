@@ -37,7 +37,7 @@ process combine {
     echo true
 
     input:
-    file(fa) from minced_output_spacers_fa
+    file(fa) from minced_output_spacers_fa.filter{ it.size()>0 }
 
     output:
     file '*.parsed.csv' into minced_csv_out
