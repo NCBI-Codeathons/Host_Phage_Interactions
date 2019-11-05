@@ -5,9 +5,9 @@ Understanding how Phages Affect Microbial Disease
 
 ![alt text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Flow.jpg)
 
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Host_Pathogen_Interactions-primaryworkflow.png)
+![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI_primary_workflow.png)
 
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Host_Pathogen_Interactions-secondaryworkflow.png)
+![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI_seconday_workflow.png)
 
 ![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/WorkflowDiagram.jpg)
 
@@ -39,6 +39,8 @@ Overview Diagram
 # How to use <this software>
 
 # Software Workflow Diagram
+
+![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI-CRISPR-DB-Workflow.png)
 
 # File structure diagram 
 #### _Define paths, variable names, etc_
