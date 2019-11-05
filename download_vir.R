@@ -4,7 +4,7 @@
 library(rentrez)
 
 setwd("~/Host_Phage_Interactions/data/")
-seqs <- unqiue(readLines("Viral_Genbank_Accesions.txt"))# %>% unique()
+seqs <- unique(readLines("Viral_Genbank_Accesions.txt"))# %>% unique()
 # id <- entrez_search(db="nuccore",term=seqs[1])
 # summ <- entrez_summary(db="nuccore",id=id$ids)
 
