@@ -34,7 +34,7 @@ process minced {
 //     .set{ combined_ch }
 
 process combine {
-    echo true
+    publishDir 'CSV_out'
 
     input:
     file(fa) from minced_output_spacers_fa.filter{ it.size()>0 }
@@ -48,5 +48,5 @@ process combine {
     """
 }
 
-minced_csv_out
-    .collectFile(name: params.minced_out + '/minced_out.csv', newLine: false)
+// minced_csv_out
+//    .collectFile(name: params.minced_out + '/minced_out.csv', newLine: false)
