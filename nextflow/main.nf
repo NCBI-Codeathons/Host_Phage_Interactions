@@ -2,6 +2,7 @@
 
 params.input = 'Aquifex_aeolicus_VF5.fna'
 params.minced_out = 'minced_out'
+
 input_channel = Channel.fromPath(params.input)
 
 process minced {
@@ -34,12 +35,19 @@ process minced {
 
 process combine {
     echo true
+    publishDir params.minced_out
 
     input:
     file(fa) from minced_output_spacers_fa
-    // set key, tup from combined_ch
+
+    output:
+    file '*.parsed.csv' into minced_csv_out
 
     """
-    awk 'BEGIN{RS=">";OFS="\t"}NR>1{print "#"\$1,\$2}' $fa > tmp.csv
+    awk 'BEGIN{RS=">";OFS=","}NR>1{print \$1,\$2}' $fa > ${fa.simpleName}.csv
+    parse.py ${fa.simpleName}.csv ${fa.simpleName}.parsed.csv
     """
 }
+
+minced_csv_out
+    .collectFile(name: params.minced_out + '/minced_out.csv', newLine: false)
