@@ -9,10 +9,12 @@ seqs <- unique(readLines("Viral_Genbank_Accesions.txt"))# %>% unique()
 # summ <- entrez_summary(db="nuccore",id=id$ids)
 
 setwd("~/vir")
-getseq <- function(seqi){
+getSeq <- function(seqi){
   id <- entrez_search(db="nuccore",term=seqi)
   write(entrez_fetch(db="nuccore",id=id$ids,rettype = "fasta"),
         file=paste0(seqi,".fasta"))
 }
 
-lapply(seqs,getseq)
+tryGetSeq <- function(seqi){getSeq(seqi)}
+
+lapply(seqs,tryGetSeq)
