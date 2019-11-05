@@ -6,7 +6,6 @@ params.minced_out = 'minced_out'
 input_channel = Channel.fromPath(params.input)
 
 process minced {
-    echo true
     publishDir params.minced_out
     errorStrategy 'ignore'
 
