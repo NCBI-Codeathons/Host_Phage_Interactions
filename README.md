@@ -1,27 +1,9 @@
 # Host_Phage_Interactions
-Understanding how Phages Affect Microbial Disease
-
-
-
-![alt text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Flow.jpg)
-
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI_primary_workflow.png)
-
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI_seconday_workflow.png)
-
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/WorkflowDiagram.jpg)
+Understanding How Phages Affect Microbial Disease
 
 
 
 
-
-
-## Please cite our work -- here is the ICMJE Standard Citation:
-
-### ...and a link to the DOI:
-
-## Awesome Logo
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Escheria.png)
 
 ### You can make a free DOI with zenodo <link>
 
@@ -29,15 +11,35 @@ Understanding how Phages Affect Microbial Disease
 
 ## Intro statement
 
-## What's the problem?
+Viruses that infect microbes (both Bacteria and Archaea), commonly known as phage, have a direct impact on the organisms present in all microbiomes, regardless of environment. Like the microbiome, phage present in a sample can be diagnostic of the conditions (e.g., microbial community structure, underlying physiochemical conditions, etc.), but unlike the microbial hosts have smaller genomes that may more easily assemble in a metagenomic sample. Indexing metagenomic samples on the viral community will provide a way categorize metagenomic samples in NCBI SRA that will allow for the identification of related sample types.
 
-## Why should we solve it?
+## Detecting Host and Phage Signatures
 
-# What is <this software>?
+The Host Phage Interaction (HPI) group developed three tracks and databases to explore the nature of host-phage interactions, specifically:
+
+ - Known Host-Virus Interactions Database, detailing the current known linkages of infection, collected from NCBI
+ - CRISPR Spacer Database, constructed by extracting spacer information from CRISPR arrays representing a large breadth of microorganisms 
+ - E. coli Prophage Virulence Factor Database, a collection of clinical and environmental E. coli screened for prophage sequences and corresponding bacterial virulence factors
+
+![alt text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Flow.jpg)
+
+## Known Host-Virus Interactions Database
+
+Exisiting databases providing information on hosts (including Bacteria, Archaea, and Eukarya) and the identity of confirmed viral agents were gathered from [PhagesDB](https://phagesdb.org/) and NCBI VirusHostDB/NCBI Virus-Host Database (CITE) were combined and standardized.
+
+The comprehensive database table consists of X virus-host pairs and a corresponding FASTA file containing the viral sequences.
+
+## CRISPR Spacer Database
+
+CRISPR spacers were compiled from four distinct sources (1) the [CRISPRCasdb](https://crisprcas.i2bc.paris-saclay.fr/Home/Download), built using [CRISPRCasFinder](https://academic.oup.com/nar/article/46/W1/W246/5001162) completely assembled genomes from RefSeq, (2) [a set of spacers](https://www.liebertpub.com/doi/full/10.1089/crispr.2018.0034) built using [CRISPRDetect](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4869251/) on all prokaryotic assemblies in NCBI's RefSeq (December, 2017), (3) a set of spacers found in [24345 high-quality metagenome assembled genomes](https://www.nature.com/articles/s41586-019-1058-x) (MAGs) from the human microbiome using [MinCED](https://github.com/ctSkennerton/minced) (based on [CRT](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-8-209)), and (4) a set of spacers from the 24706 species-representative sequences in [GTDB](https://www.biorxiv.org/content/10.1101/771964v1) found using MinCED. All genomes/MAGs were provided a standardized taxonomy based on the [GTDB taxonomy](https://gtdb.ecogenomic.org/). In total this resulted in 1M unique spacer sequences (2.6M non-redundant spacer sequences) linked to a formalized source taxonomy.
+
+## E. coli Prophage Virulence Factor Database  
+
+
+
+# Target Discovery
 
 Overview Diagram
-
-# How to use <this software>
 
 # Software Workflow Diagram
 
