@@ -3,7 +3,7 @@ Linking Phages to Microbial Hosts
 
 ## Intro statement
 
-Viruses that infect microbes (both Bacteria and Archaea) have a direct impact on the organisms present in all microbiomes, regardless of environment. Like the microbiome, viruses present in a sample can be diagnostic of the conditions (e.g., microbial community structure, underlying physiochemical conditions, etc.), but unlike the microbial hosts have smaller genomes that may more easily assemble in a metagenomic sample. Indexing metagenomic samples on the viral community will provide a way categorize metagenomic samples in NCBI SRA that will allow for the identification of related sample types. The term phage specifically refers to viruses that infect bacteria.
+Viruses that infect microbes (both Bacteria and Archaea) have a direct impact on the organisms present in all microbiomes, regardless of environment. Like the microbiome, viruses present in a sample can be diagnostic of the conditions (e.g., microbial community structure, underlying physiochemical conditions, etc.), but unlike the microbial hosts, viruses have smaller genomes that may more easily assemble in a metagenomic sample. Indexing metagenomic samples on the viral community will provide a way categorize metagenomic samples in NCBI SRA that will allow for the identification of related sample types. The term phage specifically refers to viruses that infect bacteria.
 
 ## Detecting Host and Phage Signatures
 
@@ -77,7 +77,7 @@ blastn \
 
 ## CRISPR Spacer Database Matched to Known Viruses
 
-The CRISPR Spacer Database was used to search against two known virus databases that consisted of [NCBI Viral RefSeq representatives](https://www.ncbi.nlm.nih.gov/genome/viruses/) and [NCBI Virus Variation Resource](https://academic.oup.com/nar/article/45/D1/D482/2605702). The BLASTn search used the same parameters as described above.
+The CRISPR Spacer Database was used to search against two known virus databases that consisted of [NCBI Viral RefSeq representatives](https://www.ncbi.nlm.nih.gov/genome/viruses/) and [NCBI Validated Virus Resource frm GenBank](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/). The BLASTn search used the same parameters as described above.
 
 The CRISPR spacers matched X viruses in these representative databases. Cross-referenced to the known host-virus interaction database, X% matched virus-host and spacer-source.
 
