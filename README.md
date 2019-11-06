@@ -21,7 +21,7 @@ The Host Phage Interaction (HPI) group developed three tracks and databases to e
 
 ## Known Host-Virus Interactions Database
 
-Exisiting databases providing information on hosts (including Bacteria, Archaea, and Eukarya) and the identity of confirmed viral agents were gathered from [PhagesDB](https://phagesdb.org/) and NCBI VirusHostDB/NCBI Virus-Host Database (CITE) were combined and standardized.
+Existing databases providing information on hosts (including Bacteria, Archaea, and Eukarya) and the identity of confirmed viral agents were gathered from [PhagesDB](https://phagesdb.org/) and NCBI VirusHostDB/NCBI Virus-Host Database (CITE) were combined and standardized.
 
 The comprehensive database table consists of 44,975 virus-host pairs. The number of unique viruses and hosts in the database are 29,847 and 7,974, respectively.
 
