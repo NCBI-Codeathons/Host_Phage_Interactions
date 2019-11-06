@@ -27,10 +27,10 @@ CRISPR-Cas adaptive immune systems are a unique form of adaptive immunity found 
 
 
 CRISPR spacers were compiled from four distinct sources: 
- - (1) the [CRISPRCasdb](https://crisprcas.i2bc.paris-saclay.fr/Home/Download), built using [CRISPRCasFinder](https://academic.oup.com/nar/article/46/W1/W246/5001162) completely assembled genomes from RefSeq
- - (2) [a set of spacers](https://www.liebertpub.com/doi/full/10.1089/crispr.2018.0034) built using [CRISPRDetect](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4869251/) on all prokaryotic assemblies in NCBI's RefSeq (December, 2017) 
- - (3) a set of spacers found in [24345 high-quality metagenome assembled genomes](https://www.nature.com/articles/s41586-019-1058-x) (MAGs) from the human microbiome using [MinCED](https://github.com/ctSkennerton/minced) (based on [CRT](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-8-209)) 
- - (4) a set of spacers from the 24706 species-representative sequences in [GTDB](https://www.biorxiv.org/content/10.1101/771964v1) found using MinCED. 
+ - (1) the [CRISPRCasdb](https://crisprcas.i2bc.paris-saclay.fr/Home/Download), built using [CRISPRCasFinder](https://academic.oup.com/nar/article/46/W1/W246/5001162) completely assembled genomes from RefSeq = CRISPcasdb
+ - (2) [a set of spacers](https://www.liebertpub.com/doi/full/10.1089/crispr.2018.0034) built using [CRISPRDetect](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4869251/) on all prokaryotic assemblies in NCBI's RefSeq (December, 2017) = RefSeqAllWeissmanetal 
+ - (3) a set of spacers found in [24345 high-quality metagenome assembled genomes](https://www.nature.com/articles/s41586-019-1058-x) (MAGs) from the human microbiome using [MinCED](https://github.com/ctSkennerton/minced) (based on [CRT](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-8-209)) = MAGSNayfachetal
+ - (4) a set of spacers from the 24706 species-representative sequences in [GTDB](https://www.biorxiv.org/content/10.1101/771964v1) found using MinCED. = GTDB
 
  All genomes/MAGs were provided a standardized taxonomy based on the [GTDB taxonomy](https://gtdb.ecogenomic.org/). 
 
@@ -41,7 +41,10 @@ CRISPR spacers were compiled from four distinct sources:
 
 ## E. coli Prophage Virulence Factor Database  
 
-Members of the "E. coli and Shigella" tax group were selected from the [NCBI Pathogen Database via the Isolates Browser](https://www.ncbi.nlm.nih.gov/pathogens/isolates/#/search/taxgroup_name:%22E.coli%20and%20Shigella%22). A subset of 10,000 genomes were identified based on the filters "Host:Human" or "Host:Homo sapiens", "Isolation type:clinical" or "Isolation type:environmental/other", and "Scientific Name:Escherichia coli". Separated into two groups, "environmental" and "clinical", genomes were sorted by GenBank Assembly ID and 3,500 genomes were downloaded for each group. [VirSorter v1.0.5](https://github.com/simroux/VirSorter) was applied to all E. coli genomes to detect prophage integrated into the genome with the parameters `--db 2`. Detected prophages were annotated using [Prokka v1.14.0](https://github.com/tseemann/prokka) with the an additional database created from the [PARTIC database v3.5.43](https://www.patricbrc.org/) to target bacterial virulence factors, including ARDB, CARD, NDARO, PATRIC_VF, TCDB, VFDB, and Victors.
+Members of the "E. coli and Shigella" tax group were selected from the [NCBI Pathogen Database via the Isolates Browser](https://www.ncbi.nlm.nih.gov/pathogens/isolates/#/search/taxgroup_name:%22E.coli%20and%20Shigella%22). A subset of 10,000 genomes were identified based on the filters "Host:Human" or "Host:Homo sapiens", "Isolation type:clinical" or "Isolation type:environmental/other", and "Scientific Name:Escherichia coli". Separated into two groups, "environmental" and "clinical", genomes were sorted by GenBank Assembly ID and 3,500 genomes were downloaded for each group. Genomes were downloaded using the R script `ecoli_download_links.R` and requires [pathogens_combined_table.csv](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/data/pathogens_combined_table.csv) and assembly_summary_genbank.txt, which can be accessed directly from NCBI `wget ftp://ftp.ncbi.nlm.nih.gov/genomes/genbank/assembly_summary_genbank.txt` (~100MB)
+
+
+[VirSorter v1.0.5](https://github.com/simroux/VirSorter) was applied to all E. coli genomes to detect prophage integrated into the genome with the parameters `--db 2`. Detected prophages were annotated using [Prokka v1.14.0](https://github.com/tseemann/prokka) with the an additional database created from the [PARTIC database v3.5.43](https://www.patricbrc.org/) to target bacterial virulence factors, including ARDB, CARD, NDARO, PATRIC_VF, TCDB, VFDB, and Victors.
 
 ![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/ProphagePipeline.jpg)
 
@@ -52,7 +55,7 @@ Members of the "E. coli and Shigella" tax group were selected from the [NCBI Pat
 
 The CRISPR Spacer Database was used to search 2,953 assembled metagenomes subsampled from the NCBI SRA using BLASTn. Matches to spacers were extracted as assemblies of interest.
 
-A combined BLAST database was constructed from the assembled metagenomes `makeblastdb `
+A combined BLAST database was constructed from the assembled metagenomes `makeblastdb -in mg_assemblies.fa -dbtype nucl -title mg_assemblies -out mg_assemblies`
 
 The BLASTn search was parallelized using [GNU parallel](https://www.gnu.org/software/parallel/) `parallel --block 100k --recstart '>' --pipe` with the BLAST specific parameters `-task blastn-short -evalue 0.01 -outfmt 6 -gapopen 10 -gapextend 2 -penalty "-1" -word_size 7 -dust no -db mg_assemblies` adjusted to account for the short length of the spacer sequences.
 
@@ -74,6 +77,7 @@ blastn \
 ![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI-CRISPR-DB-Workflow2.png)
 
 ## CRISPR Spacer Database Matched to Known Viruses
+
 
 
 ## Clinical and Environmental E. coli Virulence Factor Occurrence 
