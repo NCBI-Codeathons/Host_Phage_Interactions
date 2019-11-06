@@ -1,4 +1,4 @@
-# Host_Phage_Interactions
+# Host Phage Interactions
 Understanding How Phages Affect Microbial Disease
 
 
@@ -30,6 +30,9 @@ Exisiting databases providing information on hosts (including Bacteria, Archaea,
 The comprehensive database table consists of X virus-host pairs and a corresponding FASTA file containing the viral sequences.
 
 ## CRISPR Spacer Database
+
+CRISPR-Cas adaptive immune systems are a unique form of adaptive immunity found in prokaryotes wherein viral DNA or RNA sequences are stored on the host genome in the form of short (~30bp) "spacers". These spacers, stored at a repetitive CRISPR "array" can be used to reliably associate viruses with their hosts.
+
 
 CRISPR spacers were compiled from four distinct sources: 
  - (1) the [CRISPRCasdb](https://crisprcas.i2bc.paris-saclay.fr/Home/Download), built using [CRISPRCasFinder](https://academic.oup.com/nar/article/46/W1/W246/5001162) completely assembled genomes from RefSeq
