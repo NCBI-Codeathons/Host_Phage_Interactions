@@ -1,27 +1,9 @@
 # Host_Phage_Interactions
-Understanding how Phages Affect Microbial Disease
-
-
-
-![alt text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Flow.jpg)
-
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI_primary_workflow.png)
-
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI_seconday_workflow.png)
-
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/WorkflowDiagram.jpg)
+Understanding How Phages Affect Microbial Disease
 
 
 
 
-
-
-## Please cite our work -- here is the ICMJE Standard Citation:
-
-### ...and a link to the DOI:
-
-## Awesome Logo
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Escheria.png)
 
 ### You can make a free DOI with zenodo <link>
 
@@ -29,7 +11,17 @@ Understanding how Phages Affect Microbial Disease
 
 ## Intro statement
 
+Viruses that infect microbes (both Bacteria and Archaea), commonly known as phage, have a direct impact on the organisms present in all microbiomes, regardless of environment. Like the microbiome, phage present in a sample can be diagnostic of the conditions (e.g., microbial community structure, underlying physiochemical conditions, etc.), but unlike the microbial hosts have smaller genomes that may more easily assemble in a metagenomic sample. Indexing metagenomic samples on the viral community will provide a way categorize metagenomic samples in NCBI SRA that will allow for the identification of related sample types.
+
 ## What's the problem?
+
+The Host Phage Interaction (HPI) group developed three tracks and databases to explore the nature host-phage interactions, specifically:
+
+ - Known Host-Phage Interactions Database, detailing the current known linkages of infection, collected from NCBI
+ - CRISPR Spacer Database, constructed by extracting spacer information from CRISPR arrays representing a large breadth of microorganisms 
+ - E. coli Prophage Virulence Factor Database, a collection of clinical and environmental E. coli screened for prophage sequences and corresponding bacterial virulence factors
+
+![alt text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Flow.jpg)
 
 ## Why should we solve it?
 
