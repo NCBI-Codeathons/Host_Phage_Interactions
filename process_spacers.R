@@ -1,19 +1,27 @@
 
+
+#
+# COmpile all spacer db's into one file (csv or fasta)
+# sorry it's a messs -Jake
+
+
+
+
+
 # # To process raw jake db files
 #awk -F ";" '{print $1,$4}' jake_spacers.gff > jake_spacers_clean.txt
 #awk -F "\t" '{print $1" "$9}' jake_spacers_clean.txt  > jake_spacers_final.txt
 #awk -F ";" '{print $1,$4}' jake_repeats.gff > jake_repeats_clean.txt
 #awk -F "\t" '{print $1" "$9}' jake_repeats_clean.txt  > jake_repeats_final.txt
-
-library(dplyr)
-library(data.table)
-
-merge.easy <- function(df1,df2,key){
-  df1 <- data.table(df1,key=key)
-  df2 <- data.table(df2,key=key)
-  return(unique(merge(df1,df2,all.x=TRUE,by=.EACHI,allow.cartesian=TRUE)))
-}
-
+# 
+# library(dplyr)
+# library(data.table)
+# 
+# merge.easy <- function(df1,df2,key){
+#   df1 <- data.table(df1,key=key)
+#   df2 <- data.table(df2,key=key)
+#   return(unique(merge(df1,df2,all.x=TRUE,by=.EACHI,allow.cartesian=TRUE)))
+# }
 # 
 # setwd("~/CDout")
 # sp <- read.delim("jake_spacers_final.txt",sep=" ",header=F,stringsAsFactors = F)
@@ -40,6 +48,15 @@ merge.easy <- function(df1,df2,key){
 # save(acc2acc,file="acc2acc.RData")
 # 
 
+
+library(dplyr)
+library(data.table)
+
+merge.easy <- function(df1,df2,key){
+  df1 <- data.table(df1,key=key)
+  df2 <- data.table(df2,key=key)
+  return(unique(merge(df1,df2,all.x=TRUE,by=.EACHI,allow.cartesian=TRUE)))
+}
 
 #### Add metadata
 
