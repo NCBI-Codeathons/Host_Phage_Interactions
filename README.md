@@ -1,13 +1,5 @@
 # Host Phage Interactions
-Understanding How Phages Affect Microbial Disease
-
-
-
-
-
-### You can make a free DOI with zenodo <link>
-
-## Website (if applicable)
+Linking Phages to Microbial Hosts
 
 ## Intro statement
 
@@ -53,30 +45,13 @@ Members of the "E. coli and Shigella" tax group were selected from the [NCBI Pat
 
 # Results
 
-## Target Discovery
+## Target Discovery in NCBI Assembled Metagenomes
 
 ![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI-CRISPR-DB-Workflow2.png)
 
+## CRISPR Spacer Database Matched to Known Viruses
 
 
-## Software Workflow Diagram
+## Clinical and Environmental E. coli Virulence Factor Occurrence 
 
-
-
-
-# File structure diagram 
-#### _Define paths, variable names, etc_
-
-# Installation options:
-
-### Installing <this software> from Github
-
-1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
-2. Edit the configuration files as below
-3. Install packages via conda
-
-### Configuration
-
-```Examples here```
-
-### Website
+### Zendo DOI
