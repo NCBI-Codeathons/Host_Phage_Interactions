@@ -15,5 +15,6 @@ SpacerSeq: sequence of spacer (used to match w/ virus)
 Accession3: genome accession  
 TaxonomyGTDB: Host lineage from GTDB  
 Source: data source  
+NCBItaxid: NCBI taxonomic id (many redundant rows w/ diff taxids)  
   
 Most important columns are SpacerSeq, TaxonomyGTDB, and source (and the accession are probably also useful)

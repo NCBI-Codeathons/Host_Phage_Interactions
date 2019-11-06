@@ -76,8 +76,7 @@ spacers2$Accession3 <- spacers2$Accession2 %>% gsub(pattern="[.].*",replace="")
 gtdb$Accession3 <- gtdb$Accession2 %>% gsub(pattern="[.].*",replace="") %>% gsub(pattern="GCA",replace="GCF")
 spacers3 <- merge.easy(spacers2,gtdb,key="Accession3") %>% subset(!is.na(TaxonomyGTDB))
 
-write.csv(spacers3,file="spacers_jake.csv")
-
+#write.csv(spacers3,file="spacers_jake.csv")
 
 #spacers3 <- read.csv("spacers_jake.csv",head=T,stringsAsFactors = F)
 cdb <- read.csv("crisprcasdb.csv",head=T,stringsAsFactors = F)
@@ -109,7 +108,22 @@ head(spacer_db)
 blank_sp <- lapply(1:100,rep,x="N") %>% lapply(.,paste,collapse="") %>% unlist()
 spacer_db <- spacer_db %>% subset(nchar(SpacerSeq)>10) %>% subset(!SpacerSeq %in% blank_sp)
 
-write.csv(spacer_db,file="spacer_db.csv")
+
+# #get ncbi taxids corresponding to gtdb lineage
+# setwd("~/CDout")
+# #Download from https://data.ace.uq.edu.au/public/gtdb/data/releases/release89/89.0/
+# bacm <- read.delim("bac120_metadata_r89.tsv") %>% subset(select=c(gtdb_taxonomy,ncbi_species_taxid)) %>% unique()
+# archm <- read.delim("ar122_metadata_r89.tsv") %>% subset(select=c(gtdb_taxonomy,ncbi_species_taxid)) %>% unique()
+# gtdb2ncbi <- rbind(bacm,archm)
+# setwd("~/Host_Phage_Interactions/data")
+# save(gtdb2ncbi,file="gtdb2ncbi.RData")
+
+load("gtdb2ncbi.RData")
+names(gtdb2ncbi) <- c("TaxonomyGTDB","NCBItaxid")
+spacer_db2 <- merge.easy(spacer_db,gtdb2ncbi,key="TaxonomyGTDB")
+
+setwd("~/CDout")
+write.csv(spacer_db2,file="spacer_db.csv")
 
 sp_gtdb <- spacer_db %>% subset(select=c(SpacerSeq,TaxonomyGTDB)) %>% unique()
 sp_gtdb_count <- sp_gtdb %>% group_by(SpacerSeq) %>% count()
