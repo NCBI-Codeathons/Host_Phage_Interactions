@@ -43,9 +43,30 @@ Members of the "E. coli and Shigella" tax group were selected from the [NCBI Pat
 ![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/ProphagePipeline.jpg)
 
 
-# Results
+# Procedures and Results
 
 ## Target Discovery in NCBI Assembled Metagenomes
+
+The CRISPR Spacer Database was used to search 2,953 assembled metagenomes subsampled from the NCBI SRA using BLASTn. Matches to spacers were extracted as assemblies of interest.
+
+A combined BLAST database was constructed from the assembled metagenomes `makeblastdb `
+
+The BLASTn search was parallelized using [GNU parallel](https://www.gnu.org/software/parallel/) `parallel --block 100k --recstart '>' --pipe` with the BLAST specific parameters `-task blastn-short -evalue 0.01 -outfmt 6 -gapopen 10 -gapextend 2 -penalty "-1" -word_size 7 -dust no -db mg_assemblies` adjusted to account for the short length of the spacer sequences.
+
+```
+cat spacer_db.fasta \
+| parallel --block 100k --recstart '>' --pipe \
+blastn \
+  -task blastn-short \
+  -evalue 0.01 \
+  -outfmt 6 \
+  -gapopen 10 \
+  -gapextend 2 \
+  -penalty "-1" \
+  -word_size 7 \
+  -dust no \
+  -db mg_assemblies/blastdb/mg_assemblies -query - \
+```
 
 ![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI-CRISPR-DB-Workflow2.png)
 
@@ -53,5 +74,6 @@ Members of the "E. coli and Shigella" tax group were selected from the [NCBI Pat
 
 
 ## Clinical and Environmental E. coli Virulence Factor Occurrence 
+
 
 ### Zendo DOI
