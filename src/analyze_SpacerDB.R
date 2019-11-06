@@ -40,26 +40,26 @@ sp_counts <- sdb %>% subset(select=c(Accession3,Source,SpacerSeq)) %>% unique() 
 setwd("~/Host_Phage_Interactions/images/")
 pdf("spacer_counts_bysource.pdf",width=5,height=5)
 par(mar=c(12,5,3,3))
-boxplot(n~Source,data=sp_counts,las=2,xlab="")
+boxplot(n~Source,data=sp_counts,ylab="Number of Spacers Per Genome",las=2,xlab="")
 dev.off()
 
 setwd("~/Host_Phage_Interactions/images/")
 pdf("spacer_counts_bysource_zoom.pdf",width=5,height=5)
 par(mar=c(12,5,3,3))
-boxplot(n~Source,data=sp_counts,las=2,xlab="",ylim=c(0,100))
+boxplot(n~Source,data=sp_counts,las=2,xlab="",ylab="Number of Spacers Per Genome",ylim=c(0,100))
 dev.off()
 
 
 setwd("~/Host_Phage_Interactions/images/")
 pdf("spacer_counts_bysource.pdf",width=5,height=5)
 par(mar=c(12,5,3,3))
-boxplot(nchar(SpacerSeq)~Source,data=sdb,las=2,xlab="")
+boxplot(nchar(SpacerSeq)~Source,data=sdb,ylab="Spacer Length",las=2,xlab="")
 dev.off()
 
 
 setwd("~/Host_Phage_Interactions/images/")
 pdf("spacer_counts_bysource_zoom.pdf",width=5,height=5)
 par(mar=c(12,5,3,3))
-boxplot(nchar(SpacerSeq)~Source,data=sdb,las=2,xlab="",ylim=c(0,60))
+boxplot(nchar(SpacerSeq)~Source,data=sdb,las=2,xlab="",ylab="Spacer Length",ylim=c(0,60))
 dev.off()
 
