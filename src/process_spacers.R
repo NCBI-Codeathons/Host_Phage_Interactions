@@ -129,7 +129,7 @@ sp_gtdb <- spacer_db %>% subset(select=c(SpacerSeq,TaxonomyGTDB)) %>% unique()
 sp_gtdb_count <- sp_gtdb %>% group_by(SpacerSeq) %>% count()
 table(sp_gtdb_count$n)
 
-names <- paste0(">",paste(spacer_db$TaxonomyGTDB,source,spacer_db$Accession3,spacer_db$Accession,sep="|"))
+names <- paste0(">",paste(spacer_db$TaxonomyGTDB,spacer_db$Source,spacer_db$Accession3,spacer_db$Accession,sep="-"))
 fasta <- character(length(names)*2)
 fasta[seq(1,length(fasta),2)] <- names
 fasta[seq(2,length(fasta),2)] <- spacer_db$SpacerSeq
