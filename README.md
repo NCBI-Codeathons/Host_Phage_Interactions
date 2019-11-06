@@ -3,7 +3,7 @@ Linking Phages to Microbial Hosts
 
 ## Intro statement
 
-Viruses that infect microbes (both Bacteria and Archaea), commonly known as phage, have a direct impact on the organisms present in all microbiomes, regardless of environment. Like the microbiome, phage present in a sample can be diagnostic of the conditions (e.g., microbial community structure, underlying physiochemical conditions, etc.), but unlike the microbial hosts have smaller genomes that may more easily assemble in a metagenomic sample. Indexing metagenomic samples on the viral community will provide a way categorize metagenomic samples in NCBI SRA that will allow for the identification of related sample types.
+Viruses that infect microbes, commonly known as phages, have a direct impact on the organisms present in all microbiomes, regardless of environment. Like the microbiome, phages present in a sample can be diagnostic of the conditions such as microbial community structure, underlying physiochemical conditions, etc., but unlike the microbial hosts, viruses have smaller genomes that may more easily assemble in a metagenomic sample. Indexing metagenomic samples on the viral community will provide a way categorize metagenomic samples in the NCBI SRA that will allow for the identification of related sample types.
 
 ## Detecting Host and Phage Signatures
 
