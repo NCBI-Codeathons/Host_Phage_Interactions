@@ -3,7 +3,7 @@ Linking Phages to Microbial Hosts
 
 ### Hosts (black circles) Linked to Viruses (red circles)
 
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/bipartite_hotsvir_circle.pdf)
+![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/bipartite_hotsvir_circle.png)
 
 ## Viruses As Indeces For NCBI SRA Metagenomes
 
@@ -96,6 +96,6 @@ The CRISPR spacers matched X viruses in these representative databases. Cross-re
 Search through novel genomes to detect additional CRISPR spacer host links `minced -spacers -gffFull NAME.fasta NAME.crisprs NAME.gff`
 
 
-More to common
+More to come.
 
 ### Zendo DOI
