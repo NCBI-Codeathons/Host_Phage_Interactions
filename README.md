@@ -1,11 +1,13 @@
 # Host Phage Interactions
 Linking Phages to Microbial Hosts
 
-## Intro statement
+## Viruses As Indeces For NCBI SRA Metagenomes
 
 Viruses that infect microbes (both Bacteria and Archaea) have a direct impact on the organisms present in all microbiomes, regardless of environment. Like the microbiome, viruses present in a sample can be diagnostic of the conditions (e.g., microbial community structure, underlying physiochemical conditions, etc.), but unlike the microbial hosts, viruses have smaller genomes that may more easily assemble in a metagenomic sample. Indexing metagenomic samples on the viral community will provide a way categorize metagenomic samples in NCBI SRA that will allow for the identification of related sample types. The term phage specifically refers to viruses that infect bacteria.
 
 ## Detecting Host and Phage Signatures
+
+![alt text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Flow.jpg)
 
 The Host Phage Interaction (HPI) group developed three tracks and databases to explore the nature of host-phage interactions, specifically:
 
@@ -13,15 +15,13 @@ The Host Phage Interaction (HPI) group developed three tracks and databases to e
  - CRISPR Spacer Database, constructed by extracting spacer information from CRISPR arrays representing a large breadth of microorganisms 
  - E. coli Prophage Virulence Factor Database, a collection of clinical and environmental E. coli screened for prophage sequences and corresponding bacterial virulence factors
 
-![alt text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Flow.jpg)
-
 ## Known Host-Virus Interactions Database
 
 Exisiting databases providing information on hosts (including Bacteria, Archaea, and Eukarya) and the identity of confirmed viral agents were gathered from [PhagesDB](https://phagesdb.org/) and NCBI VirusHostDB/NCBI Virus-Host Database (CITE) were combined and standardized.
 
 The comprehensive database table consists of 44,975 virus-host pairs. The number of unique viruses and hosts in the database are 29,847 and 7,974, respectively.
 
-The database can be accessed in `FILE`
+The database can be accessed in `KnownInteractionsDB.csv`
 
 ## CRISPR Spacer Database
 
@@ -86,8 +86,6 @@ The CRISPR spacers matched X viruses in these representative databases. Cross-re
 ## Clinical and Environmental E. coli Virulence Factor Occurrence 
 
 # Expanding the CRISPR Spacer Database
-
-
 
 
 ### Zendo DOI
