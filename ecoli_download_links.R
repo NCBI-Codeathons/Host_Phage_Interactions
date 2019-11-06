@@ -1,4 +1,8 @@
 
+#JLW -2019
+
+#ftp links to download ecoli genomes, get "assembly_summary_genbank.txt" at ftp://ftp.ncbi.nlm.nih.gov/genomes/genbank/assembly_summary_genbank.txt (too big for git)
+
 library(dplyr)
 
 setwd("~/Host_Phage_Interactions/data/")

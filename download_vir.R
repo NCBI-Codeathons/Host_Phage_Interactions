@@ -1,4 +1,7 @@
 
+#JLW -2019
+
+# old/bad - Dont use, rentrez frequently crashes (just use efetch commands, see format_virsearch_query.R for example of how to format commands/make script)
 
 #install.packages("rentrez")
 library(rentrez)

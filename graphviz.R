@@ -1,4 +1,10 @@
 
+
+#JLW -2019
+
+# Vizualising host-phage interaction database (host at the genus level)
+
+
 library(dplyr)
 library(igraph)
 
