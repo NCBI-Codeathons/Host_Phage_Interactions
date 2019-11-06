@@ -55,7 +55,7 @@ Members of the "E. coli and Shigella" tax group were selected from the [NCBI Pat
 
 ## Target Discovery
 
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI-CRISPR-DB-Workflow.png)
+![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/HPI-CRISPR-DB-Workflow2.png)
 
 
 
