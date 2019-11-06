@@ -13,17 +13,24 @@ Understanding How Phages Affect Microbial Disease
 
 Viruses that infect microbes (both Bacteria and Archaea), commonly known as phage, have a direct impact on the organisms present in all microbiomes, regardless of environment. Like the microbiome, phage present in a sample can be diagnostic of the conditions (e.g., microbial community structure, underlying physiochemical conditions, etc.), but unlike the microbial hosts have smaller genomes that may more easily assemble in a metagenomic sample. Indexing metagenomic samples on the viral community will provide a way categorize metagenomic samples in NCBI SRA that will allow for the identification of related sample types.
 
-## What's the problem?
+## Detecting Host and Phage Signatures
 
-The Host Phage Interaction (HPI) group developed three tracks and databases to explore the nature host-phage interactions, specifically:
+The Host Phage Interaction (HPI) group developed three tracks and databases to explore the nature of host-phage interactions, specifically:
 
- - Known Host-Phage Interactions Database, detailing the current known linkages of infection, collected from NCBI
+ - Known Host-Virus Interactions Database, detailing the current known linkages of infection, collected from NCBI
  - CRISPR Spacer Database, constructed by extracting spacer information from CRISPR arrays representing a large breadth of microorganisms 
  - E. coli Prophage Virulence Factor Database, a collection of clinical and environmental E. coli screened for prophage sequences and corresponding bacterial virulence factors
 
 ![alt text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/Flow.jpg)
 
-## Why should we solve it?
+## Known Host-Virus Interactions Database
+
+Exisiting databases providing information on hosts and the identity of confirmed viral agents were gathered from [PhagesDB](https://phagesdb.org/) and NCBI VirusHostDB (CITE) were combined and standardized.
+
+## CRISPR Spacer Database
+
+
+## E. coli Prophage Virulence Factor Database  
 
 # What is <this software>?
 
