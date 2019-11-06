@@ -87,5 +87,9 @@ The CRISPR spacers matched X viruses in these representative databases. Cross-re
 
 # Expanding the CRISPR Spacer Database
 
+Search through novel genomes to detect additional CRISPR spacer host links `minced -spacers -gffFull NAME.fasta NAME.crisprs NAME.gff`
+
+
+More to common
 
 ### Zendo DOI
