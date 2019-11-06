@@ -77,7 +77,7 @@ blastn \
 
 ## CRISPR Spacer Database Matched to Known Viruses
 
-The CRISPR Spacer Database was used to search against two known virus databases that consisted of [NCBI Viral RefSeq representatives](https://www.ncbi.nlm.nih.gov/genome/viruses/) and [NCBI Validated Virus Resource frm GenBank](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/). The BLASTn search used the same parameters as described above.
+The CRISPR Spacer Database was used to search against two known virus databases that consisted of [NCBI Viral RefSeq representatives](https://www.ncbi.nlm.nih.gov/genome/viruses/) and [NCBI Validated Virus Resource from GenBank](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/). The BLASTn search used the same parameters as described above.
 
 The CRISPR spacers matched X viruses in these representative databases. Cross-referenced to the known host-virus interaction database, X% matched virus-host and spacer-source.
 
