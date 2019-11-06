@@ -1,6 +1,10 @@
 # Host Phage Interactions
 Linking Phages to Microbial Hosts
 
+### Hosts (black circles) Linked to Viruses (red circles)
+
+![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/bipartite_hotsvir_circle.pdf)
+
 ## Viruses As Indeces For NCBI SRA Metagenomes
 
 Viruses that infect microbes (both Bacteria and Archaea) have a direct impact on the organisms present in all microbiomes, regardless of environment. Like the microbiome, viruses present in a sample can be diagnostic of the conditions (e.g., microbial community structure, underlying physiochemical conditions, etc.), but unlike the microbial hosts, viruses have smaller genomes that may more easily assemble in a metagenomic sample. Indexing metagenomic samples on the viral community will provide a way categorize metagenomic samples in NCBI SRA that will allow for the identification of related sample types. The term phage specifically refers to viruses that infect bacteria.
@@ -22,6 +26,8 @@ Exisiting databases providing information on hosts (including Bacteria, Archaea,
 The comprehensive database table consists of 44,975 virus-host pairs. The number of unique viruses and hosts in the database are 29,847 and 7,974, respectively.
 
 The database can be accessed in `KnownInteractionsDB.csv`
+
+![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/KnownInteractionDB.pdf)
 
 ## CRISPR Spacer Database
 
