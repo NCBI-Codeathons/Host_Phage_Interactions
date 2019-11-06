@@ -3,7 +3,7 @@ Linking Phages to Microbial Hosts
 
 ## Intro statement
 
-Viruses that infect microbes, commonly known as phages, have a direct impact on the organisms present in all microbiomes, regardless of environment. Like the microbiome, phages present in a sample can be diagnostic of the conditions such as microbial community structure, underlying physiochemical conditions, etc., but unlike the microbial hosts, viruses have smaller genomes that may more easily assemble in a metagenomic sample. Indexing metagenomic samples on the viral community will provide a way categorize metagenomic samples in the NCBI SRA that will allow for the identification of related sample types.
+Viruses that infect microbes (both Bacteria and Archaea) have a direct impact on the organisms present in all microbiomes, regardless of environment. Like the microbiome, viruses present in a sample can be diagnostic of the conditions (e.g., microbial community structure, underlying physiochemical conditions, etc.), but unlike the microbial hosts have smaller genomes that may more easily assemble in a metagenomic sample. Indexing metagenomic samples on the viral community will provide a way categorize metagenomic samples in NCBI SRA that will allow for the identification of related sample types. The term phage specifically refers to viruses that infect bacteria.
 
 ## Detecting Host and Phage Signatures
 
@@ -23,8 +23,7 @@ The comprehensive database table consists of X virus-host pairs and a correspond
 
 ## CRISPR Spacer Database
 
-CRISPR-Cas adaptive immune systems are a unique form of adaptive immunity found in prokaryotes wherein viral DNA or RNA sequences are stored on the host genome in the form of short (~30bp) "spacers". These spacers, stored at a repetitive CRISPR "array" can be used to reliably associate viruses with their hosts.
-
+CRISPR-Cas adaptive immune systems are a unique form of [adaptive immunity](https://science.sciencemag.org/content/315/5819/1709) found in prokaryotes wherein [viral DNA or RNA sequences are stored on the host genome in the form of short (~30bp) "spacers"](https://link.springer.com/article/10.1007/s00239-004-0046-3). [These spacers, stored at a repetitive CRISPR "array" can be used to reliably associate viruses with their hosts](https://academic.oup.com/femsre/article/40/2/258/2570202). This approach, though precise, will inevitably miss host-virus pairs where the host lacks a CRISPR array ( [a majority of bacteria](https://www.nature.com/articles/nrmicro3569), [especially certain groups](https://www.nature.com/articles/ncomms10613?origin=ppub)), or where the diversity of host CRISPR spacers has been inadequately profiled. Nevetheless, this method [can give highly confident host-virus pairs when a perfect match is found](https://academic.oup.com/femsre/article/40/2/258/2570202).
 
 CRISPR spacers were compiled from four distinct sources: 
  - (1) the [CRISPRCasdb](https://crisprcas.i2bc.paris-saclay.fr/Home/Download), built using [CRISPRCasFinder](https://academic.oup.com/nar/article/46/W1/W246/5001162) completely assembled genomes from RefSeq = CRISPcasdb
@@ -78,7 +77,9 @@ blastn \
 
 ## CRISPR Spacer Database Matched to Known Viruses
 
+The CRISPR Spacer Database was used to search against two known virus databases that consisted of [NCBI Viral RefSeq representatives](https://www.ncbi.nlm.nih.gov/genome/viruses/) and [NCBI Virus Variation Resource](https://academic.oup.com/nar/article/45/D1/D482/2605702). The BLASTn search used the same parameters as described above.
 
+The CRISPR spacers matched X viruses in these representative databases. Cross-referenced to the known host-virus interaction database, X% matched virus-host and spacer-source.
 
 ## Clinical and Environmental E. coli Virulence Factor Occurrence 
 
