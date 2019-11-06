@@ -27,7 +27,7 @@ The comprehensive database table consists of 44,975 virus-host pairs. The number
 
 The database can be accessed in `KnownInteractionsDB.csv`
 
-![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/KnownInteractionDB.pdf)
+![alt_text](https://github.com/NCBI-Codeathons/Host_Phage_Interactions/blob/development/images/KnownInteractionDB.png)
 
 ## CRISPR Spacer Database
 
